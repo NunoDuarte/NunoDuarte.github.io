@@ -1,3 +1,4 @@
-theme: jekyll-theme-minimal
-title: Welcome to the Nuno Duarte’s homepage!”
-description: Feel free to bookmark this to keep an eye on my project updates
+name: Nuno Ferreira Duarte
+markdown: kramdown
+
+permalink: /blog/:year/:month/:day/:title
