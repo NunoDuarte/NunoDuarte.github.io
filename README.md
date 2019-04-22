@@ -2,5 +2,7 @@
 
 ## TODO list:
 1. [x] A professional CV with all my publications, presentations, meetings, etc
-2. [ ] add ORCID section
-3. [ ] add scholar section
+2. [ ] Add Datasets Section
+3. [ ] Add Software Chapter in Home Section
+4. [ ] Add ORCID section
+5. [ ] Add scholar section
