@@ -1,0 +1,134 @@
+
+---
+
+- name: BMVC
+  year: 2019
+  id: bmvc2019
+  link: http://bmvc2019.org/
+  deadline: "2019-04-29 23:59:59"
+  timezone: America/Los_Angeles
+  date: September 09-12, 2019
+  place: Cardiff University, UK
+  sub: CV
+
+- name: ICARCV
+  year: 2019
+  id: icarv2019
+  link: https://www.icarcv.net/index.html
+  deadline: "2019-05-30 23:59:59"
+  timezone: Etc/GMT-8
+  date: November 18-21, 2019
+  place: Nanyang Technological University, Singapore
+  sub: RO
+
+- name: ICDM
+  year: 2019
+  id: icdm2019
+  link: http://icdm2019.org/
+  deadline: "2019-06-05 23:59:59"
+  timezone: Etc/GMT-7
+  date: November 17-20, 2019
+  place: Singapore
+  sub: ML
+
+- name: CoRL
+  year: 2019
+  id: corl2019
+  link: http://www.robot-learning.org/
+  deadline: "2018-06-15 23:59:59"
+  timezone: America/Los_Angeles
+  date: October 29-31, 2019
+  place: Zurich, Switzerland
+  sub: RO
+
+- name: WACV
+  year: 2020
+  id: wacv20
+  link: http://wacv20.uccs.us/
+  deadline: "2019-06-29 23:59:59"
+  timezone: America/Los_Angeles
+  date: March 2-5, 2020
+  place: Snowmass Village, Colorado, United States
+  sub: CV
+
+- name: ACCV
+  year: 2019
+  id: accv19
+  link: http://accv2019.net/
+  deadline: "2019-07-05 23:59:59"
+  timezone: America/Los_Angeles
+  date: December 2-6, 2019
+  place: Perth, Western Australia
+  sub: CV
+
+- name: Humanoids
+  year: 2019
+  id: humanoids2019
+  link: http://humanoids2019.csp.escience.cn/dct/page/1
+  deadline: "2019-07-07 23:59:59"
+  timezone: Etc/GMT-8
+  date: November 6-9, 2019
+  place: Beijing Friendship Hotel, Beijing, China
+  sub: RO
+
+- name: AAAI
+  year: 2019
+  id: aaai19
+  link: https://aaai.org/Conferences/AAAI-19/
+  deadline: "2018-09-05 23:59:59"
+  timezone: Etc/GMT+10
+  date: January 27 - February 1, 2019
+  place: Hilton Hawaiian Village, Honolulu, Hawaii, USA
+  sub: ML
+
+- name: ICRA
+  year: 2020
+  id: icra20
+  link: http://www.icra2020.org/
+  deadline: "2019-09-15 23:59:59"
+  timezone: America/Los_Angeles
+  date: May 31-June 4, 2020
+  place: Paris, France
+  sub: RO
+
+- name: ICLR
+  year: 2020
+  id: iclr20
+  link: http://iclr.cc/
+  deadline: "2019-10-27 17:00:00"
+  timezone: America/Los_Angeles
+  date: April 30-May 3, 2020
+  place: New Orleans, United States
+  sub: ML
+
+- name: AAMAS
+  year: 2019
+  id: aamas19
+  link: http://celweb.vuse.vanderbilt.edu/aamas19
+  deadline: "2018-11-16 23:59:00"
+  timezone: Etc/GMT+12
+  date: May 13-17, 2019
+  place: Montreal, Canada
+  sub: ML
+
+- name: CVPR
+  year: 2020
+  id: cvpr20
+  link: http://cvpr2020.thecvf.com/
+  deadline: "2019-11-15 23:59:59"
+  timezone: America/Los_Angeles
+  date: June 13-19, 2020
+  place: Seattle, United States
+  sub: CV
+
+- name: ECCV
+  year: 2019
+  id: eccv19
+  link: https://eccv2018.org/
+  deadline: "2019-03-14 15:59:00"
+  timezone: America/Los_Angeles
+  date: September 8-14, 2019
+  place: Munich, Germany
+  sub: CV
+
+

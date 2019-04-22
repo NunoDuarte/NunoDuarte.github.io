@@ -1,0 +1,10 @@
+---
+- name: Machine Learning
+  sub: ML
+- name: Computer Vision
+  sub: CV
+- name: Robotics
+  sub: RO
+- name: Artificial Inteligence
+  sub: SP
+
