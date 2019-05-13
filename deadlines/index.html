@@ -83,90 +83,6 @@ title: Deadlines
             </div>
         </div>
 
-        <div id="fsr19" class=" ML-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="http://www.srg.mech.keio.ac.jp/fsr2019/"><b>FSR 2019</b></a>
-                  <div class="meta">
-                    August 29-31, 2019 // <a href="http://maps.google.com/?q=Tokyo, Japan">Tokyo, Japan</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-        <div id="roman19" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="http://ro-man2019.org"><b>RO-MAN 2019</b></a>
-                  <div class="meta">
-                    October 14-18, 2019 // <a href="http://maps.google.com/?q=New Delhi, India">New Delhi, India</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-        <div id="bmvc2019" class=" CV-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="http://bmvc2019.org/"><b>BMVC 2019</b></a>
-                  <div class="meta">
-                    September 09-12, 2019 // <a href="http://maps.google.com/?q=Cardiff University, United Kingdom">Cardiff University, UK</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-	<div id="icdl-epirob19" class="RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://www.icdl-epirob2019.org/"><b>ICDL-Epirob 2019 - Workshop 1</b></a>
-                  <div class="meta">
-                    August 19-22, 2019 // <a href="http://maps.google.com/?q=Oslo, Norway">Oslo, Norway</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
 	<div id="icdl-epirob19-ngg" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -515,83 +431,8 @@ title: Deadlines
 
 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
-          var timezone = "Etc/GMT+11" ;
-          var confDate = moment.tz("2019-04-10 23:59:59", timezone);
-
-          // render countdown timer
-          $('#fsr19 .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#fsr19 .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'fsr19'
-            },
-            data: {
-              // Event title
-              title: 'FSR 2019 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#fsr19 .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#fsr19').addClass('past');
-        
-	  // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "Etc/GMT+11" ;
-          var confDate = moment.tz("2019-05-10 23:59:59", timezone);
-
-          // render countdown timer
-          $('#roman19 .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#roman19 .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'roman19'
-            },
-            data: {
-              // Event title
-              title: 'RO-MAN 2019 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#roman19 .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#roman19').addClass('past');
-        
-
-	  // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2019-05-15 23:59:59", timezone);
+          var confDate = moment.tz("2019-05-31 23:59:59", timezone);
 
           // render countdown timer
           $('#isrr2019 .timer').countdown(confDate.toDate(), function(event) {
@@ -625,45 +466,7 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#isrr2019').addClass('past');
  
-
-	  // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2019-04-29 23:59:59", timezone);
-
-          // render countdown timer
-          $('#bmvc2019 .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#bmvc2019 .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'bmvc2019'
-            },
-            data: {
-              // Event title
-              title: 'BMVC 2019 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#bmvc2019 .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#bmvc2019').addClass('past');
-        
-        
+    
 	  // ------------------------------//---------------------------------//        
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
@@ -1117,46 +920,7 @@ title: Deadlines
 	  // ------------------------------//---------------------------------//        
           // adjust date according to deadline timezone
           var timezone = "CET" ;
-          var confDate = moment.tz("2019-05-01 23:59:59", timezone);
-
-          // render countdown timer
-          $('#icdl-epirob19 .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#icdl-epirob19 .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'icdl-epirob19'
-            },
-            data: {
-              // Event title
-              title: 'ICDL-Epirob 2019 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#icdl-epirob19 .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#icdl-epirob19').addClass('past');
-        
-
-
-	  // ------------------------------//---------------------------------//        
-          // adjust date according to deadline timezone
-          var timezone = "CET" ;
-          var confDate = moment.tz("2019-05-12 23:59:59", timezone);
+          var confDate = moment.tz("2019-05-31 23:59:59", timezone);
 
           // render countdown timer
           $('#icdl-epirob19-ngg .timer').countdown(confDate.toDate(), function(event) {
