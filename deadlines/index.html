@@ -83,12 +83,12 @@ title: Deadlines
             </div>
         </div>
 
-	<div id="icdl-epirob19-ngg" class=" RO-conf ">
+	<div id="rss" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://nicolas-navarro-guerrero.gitlab.io/workshop-non-verbal-human-robot-interactions-icdl-epirob-2019/#"><b>ICDL-Epirob 2019 - Workshop 2</b></a>
+                  <a href="https://roboticsconference.org/"><b>RSS 2019</b></a>
                   <div class="meta">
-                    August 19-22, 2019 // <a href="http://maps.google.com/?q=Oslo, Norway">Oslo, Norway</a>
+                    August 19-22, 2019 // <a href="http://maps.google.com/?q=Oregon, USA">Oregon, USA</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -922,13 +922,13 @@ title: Deadlines
 	  // ------------------------------//---------------------------------//        
           // adjust date according to deadline timezone
           var timezone = "CET" ;
-          var confDate = moment.tz("2019-05-31 23:59:59", timezone);
+          var confDate = moment.tz("2020-01-30 23:59:59", timezone);
 
           // render countdown timer
-          $('#icdl-epirob19-ngg .timer').countdown(confDate.toDate(), function(event) {
+          $('#rss .timer').countdown(confDate.toDate(), function(event) {
             $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
           });
-          $('#icdl-epirob19-ngg .deadline-time').html(confDate.toString());
+          $('#rss .deadline-time').html(confDate.toString());
 
           // add calendar button
           var myCalendar = createCalendar({
@@ -936,11 +936,11 @@ title: Deadlines
               class: 'calendar-obj',
 
               // You can pass an ID. If you don't, one will be generated for you
-              id: 'icdl-epirob19-ngg'
+              id: 'rss'
             },
             data: {
               // Event title
-              title: 'ICDL-Epirob 2019 Workshop deadline',
+              title: 'RSS deadline',
 
               // Event start date
               start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
@@ -949,12 +949,12 @@ title: Deadlines
               duration: 60,
             }
           });
-          document.querySelector('#icdl-epirob19-ngg .calendar').appendChild(myCalendar);
+          document.querySelector('#rss .calendar').appendChild(myCalendar);
 
           // check if date has passed, add 'past' class to it
           var today = moment();
           if (today.diff(confDate) > 0)
-            $('#icdl-epirob19-ngg').addClass('past');
+            $('#rss').addClass('past');
                          
         
 	  // ------------------------------//---------------------------------//
