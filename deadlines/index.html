@@ -743,44 +743,6 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#iser').addClass('past');        
 
-
-	  // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2019-11-15 23:59:59", timezone);
-
-          // render countdown timer
-          $('#cvpr20 .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#cvpr20 .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'cvpr20'
-            },
-            data: {
-              // Event title
-              title: 'CVPR 2020 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#cvpr20 .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#cvpr20').addClass('past');        
-            
 	  // ------------------------------//---------------------------------//        
           // adjust date according to deadline timezone
           var timezone = "CET" ;
