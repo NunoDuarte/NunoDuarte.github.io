@@ -5,4 +5,4 @@
 2. [ ] Add Datasets Section
 3. [ ] Add Software Chapter in Home Section
 4. [ ] Add ORCID section
-5. [ ] Add scholar section
+5. [x] Add scholar section
