@@ -210,12 +210,13 @@ title: Deadlines
           <hr>
         </div>                         
 
-        <div id="eccv20" class=" CV-conf ">
+-->
+        <div id="icrl2021" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://eccv2019.org/"><b>ECCV 2020</b></a>
                   <div class="meta">
-                    September 8-14, 2020 // <a href="http://maps.google.com/?q=Munich, Germany">Munich, Germany</a>
+                    May 4-8, 2021 // <a href="http://maps.google.com/?q=Vienna, Austria">Vienna, Austria</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -230,7 +231,7 @@ title: Deadlines
           </div>
           <hr>
         </div>
--->
+
         <div id="aaai2021" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -784,13 +785,13 @@ title: Deadlines
 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2020-03-14 15:59:00", timezone);
+          var confDate = moment.tz("2021-09-01 15:59:00", timezone);
 
           // render countdown timer
-          $('#eccv20 .timer').countdown(confDate.toDate(), function(event) {
+          $('#icrl2021 .timer').countdown(confDate.toDate(), function(event) {
             $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
           });
-          $('#eccv20 .deadline-time').html(confDate.toString());
+          $('#icrl2021 .deadline-time').html(confDate.toString());
 
           // add calendar button
           var myCalendar = createCalendar({
@@ -798,11 +799,11 @@ title: Deadlines
               class: 'calendar-obj',
 
               // You can pass an ID. If you don't, one will be generated for you
-              id: 'eccv20'
+              id: 'icrl2021'
             },
             data: {
               // Event title
-              title: 'ECCV 2020 deadline',
+              title: 'ICRL 2021 deadline',
 
               // Event start date
               start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
@@ -811,12 +812,12 @@ title: Deadlines
               duration: 60,
             }
           });
-          document.querySelector('#eccv20 .calendar').appendChild(myCalendar);
+          document.querySelector('#icrl2021 .calendar').appendChild(myCalendar);
 
           // check if date has passed, add 'past' class to it
           var today = moment();
           if (today.diff(confDate) > 0)
-            $('#eccv20').addClass('past');
+            $('#icrl2021').addClass('past');
                
       
 	   // -----------------------------------//-----------------------------//
