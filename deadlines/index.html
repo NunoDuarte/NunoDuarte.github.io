@@ -230,13 +230,13 @@ title: Deadlines
           </div>
           <hr>
         </div>
-       
-        <div id="icarv2020" class=" RO-conf ">
+-->
+        <div id="aaai2021" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://www.icarcv.net/index.html"><b>ICARCV 2020</b></a>
+                  <a href="https://aaai.org/Conferences/AAAI-21/"><b>AAAI 2021</b></a>
                   <div class="meta">
-                    November 18-21, 2020 // <a href="http://maps.google.com/?q=Singapore">Nanyang Technological University, Singapore</a>
+                    February 2-9, 2021 // <a href="https://www.google.ch/maps/place/Vancouver,+BC,+Canad%C3%A1/@49.2578263,-123.1939433,12z/data=!3m1!4b1!4m5!3m4!1s0x548673f143a94fb3:0xbb9196ea9b81f38b!8m2!3d49.2827291!4d-123.1207375">Vancouver, British Columbia, Canada</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -251,7 +251,7 @@ title: Deadlines
           </div>
           <hr>
         </div>
--->
+	
 	<div id="humanoids" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -448,13 +448,13 @@ title: Deadlines
 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "Etc/GMT-8" ;
-          var confDate = moment.tz("2020-05-30 23:59:59", timezone);
+          var confDate = moment.tz("2021-09-07 23:59:59", timezone);
 
           // render countdown timer
-          $('#icarv2020 .timer').countdown(confDate.toDate(), function(event) {
+          $('#aaai2021 .timer').countdown(confDate.toDate(), function(event) {
             $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
           });
-          $('#icarv2020 .deadline-time').html(confDate.toString());
+          $('#aaai2021 .deadline-time').html(confDate.toString());
 
           // add calendar button
           var myCalendar = createCalendar({
@@ -462,11 +462,11 @@ title: Deadlines
               class: 'calendar-obj',
 
               // You can pass an ID. If you don't, one will be generated for you
-              id: 'icarv2020'
+              id: 'aaai2021'
             },
             data: {
               // Event title
-              title: 'ICARCV 2020 deadline',
+              title: 'AAAI 2021 deadline',
 
               // Event start date
               start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
@@ -475,12 +475,12 @@ title: Deadlines
               duration: 60,
             }
           });
-          document.querySelector('#icarv2020 .calendar').appendChild(myCalendar);
+          document.querySelector('#aaai2021 .calendar').appendChild(myCalendar);
 
           // check if date has passed, add 'past' class to it
           var today = moment();
           if (today.diff(confDate) > 0)
-            $('#icarv2020').addClass('past');
+            $('#aaai2021').addClass('past');
 
           // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
@@ -818,7 +818,9 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#eccv20').addClass('past');
                
-       
+      
+	   // -----------------------------------//-----------------------------//
+
 	// Set checkboxes
 	  var conf_type_data = [{"name":"Machine Learning","sub":"ML"},{"name":"Computer Vision","sub":"CV"},{"name":"Robotics","sub":"RO"}];
 		        var all_subs = [];
