@@ -83,6 +83,28 @@ title: Deadlines
             </div>
         </div>
 
+       <div id="corl" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="http://www.robot-learning.org/"><b>CoRL 2020</b></a>
+                  <div class="meta">
+                    October 29-31, 2020 // <a href="http://maps.google.com/?q=Osaka, Japan">Osaka, Japan</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
+
 	<div id="rss" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -229,29 +251,7 @@ title: Deadlines
               </div>
           </div>
           <hr>
-        </div>
-
-        <div id="corl" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="http://www.robot-learning.org/"><b>CoRL 2020</b></a>
-                  <div class="meta">
-                    October 29-31, 2020 // <a href="http://maps.google.com/?q=Osaka, Japan">Osaka, Japan</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-       
+        </div>       
 
        <div id="nips19" class=" ML-conf ">
           <div class="row">
@@ -421,7 +421,7 @@ title: Deadlines
           // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2020-07-07 23:59:59", timezone);
+          var confDate = moment.tz("2020-07-28 23:59:59", timezone);
 
           // render countdown timer
           $('#corl .timer').countdown(confDate.toDate(), function(event) {
