@@ -83,12 +83,12 @@ title: Deadlines
             </div>
         </div>
 
-       <div id="corl" class=" RO-conf ">
+       <div id="human" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="http://www.robot-learning.org/"><b>CoRL 2020</b></a>
+                  <a href="https://humanoids-2020.org"><b>Humanoids 2021</b></a>
                   <div class="meta">
-                    October 29-31, 2020 // <a href="http://maps.google.com/?q=Osaka, Japan">Osaka, Japan</a>
+                    July 19-21, 2021 // <a href="http://maps.google.com/?q=Munich, Germany">Munich, Germany</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -421,13 +421,13 @@ title: Deadlines
           // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2020-07-28 23:59:59", timezone);
+          var confDate = moment.tz("2021-01-15 23:59:59", timezone);
 
           // render countdown timer
-          $('#corl .timer').countdown(confDate.toDate(), function(event) {
+          $('#human .timer').countdown(confDate.toDate(), function(event) {
             $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
           });
-          $('#corl .deadline-time').html(confDate.toString());
+          $('#human .deadline-time').html(confDate.toString());
 
           // add calendar button
           var myCalendar = createCalendar({
@@ -435,11 +435,11 @@ title: Deadlines
               class: 'calendar-obj',
 
               // You can pass an ID. If you don't, one will be generated for you
-              id: 'corl'
+              id: 'human'
             },
             data: {
               // Event title
-              title: 'CoRL 2020 deadline',
+              title: 'Humanoids 2021 deadline',
 
               // Event start date
               start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
@@ -448,12 +448,12 @@ title: Deadlines
               duration: 60,
             }
           });
-          document.querySelector('#corl .calendar').appendChild(myCalendar);
+          document.querySelector('#human .calendar').appendChild(myCalendar);
 
           // check if date has passed, add 'past' class to it
           var today = moment();
           if (today.diff(confDate) > 0)
-            $('#corl').addClass('past');
+            $('#human').addClass('past');
         
                 
 	  // ------------------------------//---------------------------------//
