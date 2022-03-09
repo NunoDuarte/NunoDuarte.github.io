@@ -2,6 +2,4 @@
 
 
 ## TODO list:
-1. [x] Add Datasets Section
-2. [ ] Add Software Chapter in Home Section
-3. [x] Add ORCID section
+1. [ ] Add Software Chapter in Home Section
