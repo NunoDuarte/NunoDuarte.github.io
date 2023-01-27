@@ -1,6 +1,3 @@
-# NunoDuarte.github.io
-
-
 ## TODO list:
 1. [x] Add Software Chapter in Home Section
 2. [ ] Update the Publications section
