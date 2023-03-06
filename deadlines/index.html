@@ -22,7 +22,7 @@ title: Deadlines
     <script src="static/js/store.min.js"></script>
     <script src="static/js/ouical.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars/dist/handlebars.min.js"></script>
-    <script src="my-script.js"></script>
+    <!--<script src="my-script.js"></script>-->
 
   </head>
   <body>
@@ -135,6 +135,30 @@ title: Deadlines
   <hr>
 </div>
         
+<script>
+  // define the data for the conference
+  const conferenceData = {
+    confId: "rss",
+    confClass: "RO-conf",
+    confUrl: "https://roboticsconference.org/",
+    confName: "RSS 2023",
+    confDate: "July 10-14, 2023",
+    confLocationUrl: "http://maps.google.com/?q=Daegu, Republic of Korea",
+    confLocation: "Daegu, Republic of Korea",
+    deadline: "2023-02-03 23:59:59"
+  };
+
+  // compile the Handlebars template
+  const source = document.getElementById("rss-template").innerHTML;
+  const template = Handlebars.compile(source);
+
+  // render the template with the conference data
+  const html = template(conferenceData);
+
+  // insert the rendered HTML into the page
+  document.getElementById("rss-container").innerHTML = html;
+</script>
+
 	<div id="rss" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
