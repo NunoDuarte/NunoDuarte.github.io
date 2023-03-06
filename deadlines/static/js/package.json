@@ -1,0 +1,18 @@
+{
+  "name": "moment-timezone-custom-build",
+  "version": "0.1.0",
+  "description": "Package for Alice's custom-build of moment-timezone with the latest tzdata from IANA's website",
+  "dependencies": {
+    "moment-timezone": "^0.5.35"
+  },
+  "devDependencies": {
+    "grunt": "^1.4.0"
+  },
+  "scripts": {
+    "data": "grunt data",
+    "release": "grunt release"
+  },
+  "patches": {
+    "moment-timezone": "0.5.35"
+  }
+}
