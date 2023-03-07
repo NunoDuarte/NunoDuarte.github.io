@@ -79,7 +79,7 @@ title: Deadlines
 
 
 
-<script>
+<!-- <script>
   var timezone = "{{timezone}}";
   var confDate = moment.tz("{{confDate}}", timezone);
 
@@ -157,9 +157,9 @@ title: Deadlines
 
   // insert the rendered HTML into the page
   document.getElementById("rss-container").innerHTML = html;
-</script>
+</script> -->
 
-	<div id="rss" class=" RO-conf ">
+	<!-- <div id="rss" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://roboticsconference.org/"><b>RSS 2023</b></a>
@@ -178,9 +178,9 @@ title: Deadlines
               </div>
           </div>
           <hr>
-        </div>
+        </div> -->
 
-       <div id="iros" class=" RO-conf ">
+       <!-- <div id="iros" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://ieee-iros.org"><b>iROS 2023</b></a>
@@ -199,28 +199,7 @@ title: Deadlines
               </div>
           </div>
           <hr>
-        </div>
-
-        <div id="case" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://case2023.org"><b>CASE 2023</b></a>
-                  <div class="meta">
-                    August 26-29, 2023 // <a href="http://maps.google.com/?q=Auckland, New Zealand">Auckland, New Zealand</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
+        </div> -->
        
         <div id="roman" class=" RO-conf ">
           <div class="row">
@@ -459,44 +438,6 @@ title: Deadlines
 	}
 	addUtcTimeZones();
 
-	  // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2023-03-01 23:59:59", timezone);
-
-          // render countdown timer
-          $('#case .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#case .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'case'
-            },
-            data: {
-              // Event title
-              title: 'CASE 2021 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#case .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#case').addClass('past');
- 
-  
 	  // ------------------------------//---------------------------------//        
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
@@ -687,7 +628,7 @@ title: Deadlines
 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2023-03-17 23:59:59", timezone);
+          var confDate = moment.tz("2023-03-31 23:59:59", timezone);
 
           // render countdown timer
           $('#roman .timer').countdown(confDate.toDate(), function(event) {
@@ -759,44 +700,6 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#icdl').addClass('past');
         
-                
-	  // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2023-03-01 23:59:59", timezone);
-
-          // render countdown timer
-          $('#iros .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#iros .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'iros'
-            },
-            data: {
-              // Event title
-              title: 'iROS 2023 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#iros .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#iros').addClass('past');
-        
         
 	  // ------------------------------//---------------------------------//       
           // adjust date according to deadline timezone
@@ -834,43 +737,6 @@ title: Deadlines
           var today = moment();
           if (today.diff(confDate) > 0)
             $('#accv').addClass('past');
-
-	  // ------------------------------//---------------------------------//        
-          // adjust date according to deadline timezone
-          var timezone = "CET" ;
-          var confDate = moment.tz("2023-02-03 23:59:59", timezone);
-
-          // render countdown timer
-          $('#rss .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#rss .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'rss'
-            },
-            data: {
-              // Event title
-              title: 'RSS deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#rss .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#rss').addClass('past');
                          
  	  // ------------------------------//---------------------------------//        
           // adjust date according to deadline timezone
