@@ -72,89 +72,7 @@ title: Deadlines
             </div>
         </div>
 
-
-
-<!-- <script>
-  var timezone = "{{timezone}}";
-  var confDate = moment.tz("{{confDate}}", timezone);
-
-  $(document).ready(function() {
-    // render countdown timer
-    $('#{{confId}} .timer').countdown(confDate.toDate(), function(event) {
-      $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-    });
-    $('#{{confId}} .deadline-time').html(confDate.toString());
-
-    // add calendar button
-    var myCalendar = createCalendar({
-      options: {
-        class: 'calendar-obj',
-
-        // You can pass an ID. If you don't, one will be generated for you
-        id: '{{confId}}'
-      },
-      data: {
-        // Event title
-        title: '{{confName}} deadline',
-
-        // Event start date
-        start: confDate.toDate(),
-
-        // Event duration
-        duration: 60,
-      }
-    });
-    document.querySelector('#{{confId}} .calendar').appendChild(myCalendar);
-
-    // check if date has passed, add 'past' class to it
-    var today = moment();
-    if (today.diff(confDate) > 0)
-      $('#{{confId}}').addClass('past');
-  });
-</script>
-
-<div id="{{confId}}" class="{{confClass}}">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6">
-      <a href="{{confUrl}}"><b>{{confName}}</b></a>
-      <div class="meta">{{confDate}} // <a href="{{confLocationUrl}}">{{confLocation}}</a></div>
-    </div>
-    <div class="col-xs-12 col-sm-6">
-      <span class="timer"></span>
-      <div class="deadline">
-        <div>Deadline: <span class="deadline-time"></span></div>
-      </div>
-      <div class="calendar"></div>
-    </div>
-  </div>
-  <hr>
-</div>
-        
-<script>
-  // define the data for the conference
-  const conferenceData = {
-    confId: "rss",
-    confClass: "RO-conf",
-    confUrl: "https://roboticsconference.org/",
-    confName: "RSS 2023",
-    confDate: "July 10-14, 2023",
-    confLocationUrl: "http://maps.google.com/?q=Daegu, Republic of Korea",
-    confLocation: "Daegu, Republic of Korea",
-    deadline: "2023-02-03 23:59:59"
-  };
-
-  // compile the Handlebars template
-  const source = document.getElementById("rss-template").innerHTML;
-  const template = Handlebars.compile(source);
-
-  // render the template with the conference data
-  const html = template(conferenceData);
-
-  // insert the rendered HTML into the page
-  document.getElementById("rss-container").innerHTML = html;
-</script> -->
-
-	<!-- <div id="rss" class=" RO-conf ">
+<!--   <div id="rss" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://roboticsconference.org/"><b>RSS 2023</b></a>
@@ -217,28 +135,7 @@ title: Deadlines
           <hr>
 </div> -->
 
-        <div id="icdl" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="http://www.icdl-2023.org"><b>ICDL 2023</b></a>
-                  <div class="meta">
-                    November 9-11, 2023 // <a href="http://maps.google.com/?q=Macau, China">Macau, China</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-<!--       <div id="nips" class=" ML-conf ">
+ <!--       <div id="nips" class=" ML-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://nips.cc/Conferences/2023"><b>NIPS 2023</b></a>
@@ -280,7 +177,28 @@ title: Deadlines
           <hr>
         </div> 
 -->
-        <div id="accv" class=" CV-conf ">
+        <div id="icdl" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="http://www.icdl-2023.org"><b>ICDL 2023</b></a>
+                  <div class="meta">
+                    November 9-11, 2023 // <a href="http://maps.google.com/?q=Macau, China">Macau, China</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
+       <div id="accv" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://accv2024.org"><b>ACCV 2024</b></a>
