@@ -196,7 +196,7 @@ title: Deadlines
           <hr>
         </div> -->
        
-<!--        <div id="roman" class=" RO-conf ">
+      <!-- <div id="roman" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="http://ro-man2023.org/"><b>Ro-Man 2023</b></a>
@@ -215,9 +215,9 @@ title: Deadlines
               </div>
           </div>
           <hr>
-</div> -->
+        </div> -->
 
-<!--       <div id="nips" class=" ML-conf ">
+        <!-- <div id="nips" class=" ML-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://nips.cc/Conferences/2023"><b>NIPS 2023</b></a>
@@ -236,9 +236,9 @@ title: Deadlines
               </div>
           </div>
           <hr>
-</div> -->
+         </div> -->
 
-<!--       <div id="bmvc" class=" ML-conf ">
+        <!-- <div id="bmvc" class=" ML-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://britishmachinevisionassociation.github.io/bmvc"><b>BMVC  2023</b></a>
@@ -257,7 +257,7 @@ title: Deadlines
               </div>
           </div>
           <hr>
-</div> -->
+	</div> -->
 
         <div id="icdl" class=" RO-conf ">
           <div class="row">
@@ -433,16 +433,17 @@ title: Deadlines
 	}
 	addUtcTimeZones();
 
+
 	  // ------------------------------//---------------------------------//        
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2023-05-11 23:59:59", timezone);
+          var confDate = moment.tz("2024-01-23 23:59:59", timezone);
 
           // render countdown timer
-          $('#nips .timer').countdown(confDate.toDate(), function(event) {
+          $('#icml .timer').countdown(confDate.toDate(), function(event) {
             $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
           });
-          $('#nips .deadline-time').html(confDate.toString());
+          $('#icml .deadline-time').html(confDate.toString());
 
           // add calendar button
           var myCalendar = createCalendar({
@@ -450,11 +451,11 @@ title: Deadlines
               class: 'calendar-obj',
 
               // You can pass an ID. If you don't, one will be generated for you
-              id: 'nips'
+              id: 'icml'
             },
             data: {
               // Event title
-              title: 'NIPS 2023 deadline',
+              title: 'ICML 2023 deadline',
 
               // Event start date
               start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
@@ -463,13 +464,13 @@ title: Deadlines
               duration: 60,
             }
           });
-          document.querySelector('#nips .calendar').appendChild(myCalendar);
+          document.querySelector('#icml .calendar').appendChild(myCalendar);
 
           // check if date has passed, add 'past' class to it
           var today = moment();
           if (today.diff(confDate) > 0)
-            $('#nips').addClass('past');
-       
+            $('#icml').addClass('past');
+
 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "Etc/GMT-8" ;
