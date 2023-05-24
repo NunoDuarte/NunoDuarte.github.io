@@ -217,27 +217,6 @@ title: Deadlines
           <hr>
 </div> -->
 
-        <div id="icdl" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="http://www.icdl-2023.org"><b>ICDL 2023</b></a>
-                  <div class="meta">
-                    November 9-11, 2023 // <a href="http://maps.google.com/?q=Macau, China">Macau, China</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
 <!--       <div id="nips" class=" ML-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -279,6 +258,27 @@ title: Deadlines
           </div>
           <hr>
 </div> -->
+
+        <div id="icdl" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="http://www.icdl-2023.org"><b>ICDL 2023</b></a>
+                  <div class="meta">
+                    November 9-11, 2023 // <a href="http://maps.google.com/?q=Macau, China">Macau, China</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
 
         <div id="accv" class=" CV-conf ">
           <div class="row">
@@ -435,81 +435,6 @@ title: Deadlines
 
 	  // ------------------------------//---------------------------------//        
           // adjust date according to deadline timezone
-<!--          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2024-01-23 23:59:59", timezone);
-
-          // render countdown timer
-          $('#icml .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#icml .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'icml'
-            },
-            data: {
-              // Event title
-              title: 'ICML 2023 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#icml .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#icml').addClass('past');
-    -->   
-	  // ------------------------------//---------------------------------//        
-          // adjust date according to deadline timezone
-<!--          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2023-05-12 23:59:59", timezone);
-
-          // render countdown timer
-          $('#bmvc .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#bmvc .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'bmvc'
-            },
-            data: {
-              // Event title
-              title: 'BMVC 2023 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#bmvc .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#bmvc').addClass('past');
-		-->    
-  
-	  // ------------------------------//---------------------------------//        
-          // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
           var confDate = moment.tz("2023-05-11 23:59:59", timezone);
 
@@ -619,45 +544,6 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#humanoids').addClass('past');
         
-                
-	  // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-<!--          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2023-03-31 23:59:59", timezone);
-
-          // render countdown timer
-          $('#roman .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#roman .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'roman'
-            },
-            data: {
-              // Event title
-              title: 'Ro-Man 2023 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#roman .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#roman').addClass('past');
-	-->    
-                
 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
