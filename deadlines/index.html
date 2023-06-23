@@ -304,9 +304,9 @@ title: Deadlines
         <div id="aaai" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://aaai.org/Conferences/AAAI-24/"><b>AAAI 2024</b></a>
+                  <a href="https://aaai.org/aaai-conference/"><b>AAAI 2024</b></a>
                   <div class="meta">
-                    February 7-14, 2024 // <a href="https://www.google.ch/maps/place/">Not Decided, Yet</a>
+                    February 7-14, 2024 // <a href="http://maps.google.com/?q=Vancouver, CANADA">Vancouver, Canada</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -321,7 +321,49 @@ title: Deadlines
           </div>
           <hr>
         </div>
-	
+
+        <div id="icar" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://www.icar-robotics.org/"><b>ICAR 2023</b></a>
+                  <div class="meta">
+			  December 5-8, 2023 // <a href="http://maps.google.com/?q=Abu Dhabi, UAE">Abu Dhabi, UAE</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
+        <div id="robio" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="http://robio2023.org/"><b>Robio 2023</b></a>
+                  <div class="meta">
+                          December 4-9, 2023 // <a href="http://maps.google.com/?q=Samu, Thailand">Samu, Thailand</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
 	<div id="humanoids" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -343,7 +385,28 @@ title: Deadlines
           <hr>
         </div>
 
-        <div id="icrl" class=" CV-conf ">
+        <div id="icsr" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://icsr23.qa/"/><b>ICSR 2023</b></a>
+                  <div class="meta">
+                    December 4-7, 2023 // <a href="http://maps.google.com/?q=Doha, Qatar">Doha, Qatar</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
+	<div id="icrl" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://iclr.cc/"><b>ICRL 2024</b></a>
@@ -405,6 +468,28 @@ title: Deadlines
           </div>
           <hr>
         </div>
+
+        <div id="smc" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://ieeesmc2023.org/"><b>IEEE SMC 2023</b></a>
+                  <div class="meta">
+                    October 1-4, 2023 // <a href="http://maps.google.com/?q=Maui, Huwaii">Maui, Hawaii</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
 
         <footer>
           Maintained by <a href="https://github.com/NunoDuarte">@nduarte</a>.
@@ -545,7 +630,157 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#humanoids').addClass('past');
         
-	  // ------------------------------//---------------------------------//
+
+          // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2023-04-15 23:59:59", timezone);
+
+          // render countdown timer
+          $('#smc .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#smc .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'smc'
+            },
+            data: {
+              // Event title
+              title: 'IEEE SMC 2023 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#smc .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#smc').addClass('past');
+
+          // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2023-0i7-15 23:59:59", timezone);
+
+          // render countdown timer
+          $('#robio .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#robio .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'robio'
+            },
+            data: {
+              // Event title
+              title: 'IEEE Robio 2023 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#robio .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#robio').addClass('past');
+
+
+          // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2023-07-14 23:59:59", timezone);
+
+          // render countdown timer
+          $('#icar .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#icar .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'icar'
+            },
+            data: {
+              // Event title
+              title: 'ICAR 2023 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#icar .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#icar').addClass('past');
+
+          // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2023-08-07 23:59:59", timezone);
+
+          // render countdown timer
+          $('#icsr .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#icsr .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'icsr'
+            },
+            data: {
+              // Event title
+              title: 'ICSR 2023 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#icsr .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#icsr').addClass('past');
+
+ 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
           var confDate = moment.tz("2023-06-01 23:59:59", timezone);
