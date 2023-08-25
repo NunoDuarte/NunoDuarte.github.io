@@ -614,44 +614,7 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#aaai').addClass('past');
 
-          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2023-07-15 23:59:59", timezone);
-
-          // render countdown timer
-          $('#humanoids .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#humanoids .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'humanoids'
-            },
-            data: {
-              // Event title
-              title: 'Humanoids 2023 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#humanoids .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#humanoids').addClass('past');
-        
-
+      
           // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
@@ -692,44 +655,6 @@ title: Deadlines
           // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2023-07-15 23:59:59", timezone);
-
-          // render countdown timer
-          $('#robio .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#robio .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'robio'
-            },
-            data: {
-              // Event title
-              title: 'IEEE Robio 2023 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#robio .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#robio').addClass('past');
-
-
-          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
           var confDate = moment.tz("2023-07-14 23:59:59", timezone);
 
           // render countdown timer
@@ -763,81 +688,7 @@ title: Deadlines
           var today = moment();
           if (today.diff(confDate) > 0)
             $('#icar').addClass('past');
-
-          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2023-08-07 23:59:59", timezone);
-
-          // render countdown timer
-          $('#icsr .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#icsr .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'icsr'
-            },
-            data: {
-              // Event title
-              title: 'ICSR 2023 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#icsr .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#icsr').addClass('past');
-
- 	  // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2023-07-31 23:59:59", timezone);
-
-          // render countdown timer
-          $('#icdl .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#icdl .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'icdl'
-            },
-            data: {
-              // Event title
-              title: 'ICDL 2023 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#icdl .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#icdl').addClass('past');
-        
+       
           // ------------------------------//---------------------------------//      
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
