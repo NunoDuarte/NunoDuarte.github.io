@@ -175,12 +175,12 @@ title: Deadlines
           <hr>
         </div> -->
 
-       <!-- <div id="iros" class=" RO-conf ">
+        <div id="iros" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://ieee-iros.org"><b>iROS 2023</b></a>
+                  <a href="https://iros2024-abudhabi.org"><b>iROS 2024</b></a>
                   <div class="meta">
-                    October 1-5, 2023 // <a href="http://maps.google.com/?q=Detroit, USA">Detroit, USA</a>
+                    October 14-18, 2024 // <a href="http://maps.google.com/?q=Abu Dhabi, UAE">Abu Dhabi, UAE</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -194,14 +194,14 @@ title: Deadlines
               </div>
           </div>
           <hr>
-        </div> -->
+        </div> 
        
-      <!-- <div id="roman" class=" RO-conf ">
+       <div id="roman" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="http://ro-man2023.org/"><b>Ro-Man 2023</b></a>
+                  <a href="http://www.ro-man2024.org"><b>Ro-Man 2024</b></a>
                   <div class="meta">
-                    August 28-31, 2023 // <a href="http://maps.google.com/?q=Busan, Korea">Busan, Republic of Korea</a>
+                    August 26-30, 2024 // <a href="http://maps.google.com/?q=Busan, Korea">Busan, Republic of Korea</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -215,7 +215,7 @@ title: Deadlines
               </div>
           </div>
           <hr>
-        </div> -->
+        </div>
 
         <!-- <div id="nips" class=" ML-conf ">
           <div class="row">
@@ -539,11 +539,47 @@ title: Deadlines
 	}
 	addUtcTimeZones();
 
+         // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2024-03-10 23:59:59", timezone);
+
+          // render countdown timer
+          $('#roman .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#roman .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'roman'
+            },
+            data: {
+              // Event title
+              title: 'Ro-Man 2024 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#roman .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#roman').addClass('past');
 
 	  // ------------------------------//---------------------------------//        
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2024-01-23 23:59:59", timezone);
+          var confDate = moment.tz("2024-01-26 23:59:59", timezone);
 
           // render countdown timer
           $('#icml .timer').countdown(confDate.toDate(), function(event) {
@@ -766,7 +802,7 @@ title: Deadlines
  	  // ------------------------------//---------------------------------//        
           // adjust date according to deadline timezone
           var timezone = "CET" ;
-          var confDate = moment.tz("2024-02-03 23:59:59", timezone);
+          var confDate = moment.tz("2024-02-02 23:59:59", timezone);
 
           // render countdown timer
           $('#rss24 .timer').countdown(confDate.toDate(), function(event) {
