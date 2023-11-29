@@ -241,6 +241,48 @@ title: Deadlines
           <hr>
         </div> 
 
+        <div id="iccv" class=" CV-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://iccv2025.thecvf.com/"><b>ICCV 2025</b></a>
+                  <div class="meta">
+                    October 2-6, 2025 // <a href="http://maps.google.com/?q=Honolulu, USA">Honolulu, USA</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
+        <div id="eccv" class=" CV-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://eccv2024.ecva.net/"><b>ECCV 2026</b></a>
+                  <div class="meta">
+                    September 29 - October 4, 2026 // <a href="http://maps.google.com/?q=Milano, Italy">Milano, Italy</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
         <div id="accv" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -571,6 +613,79 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#cvpr').addClass('past');
 
+          // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2025-03-08 23:59:59", timezone);
+
+          // render countdown timer
+          $('#iccv .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#iccv .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'iccv'
+            },
+            data: {
+              // Event title
+              title: 'ICCV 2025 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#iccv .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#iccv').addClass('past');
+
+          // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2026-03-07 23:59:59", timezone);
+
+          // render countdown timer
+          $('#eccv .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#eccv .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'eccv'
+            },
+            data: {
+              // Event title
+              title: 'ECCV 2025 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#eccv .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#eccv').addClass('past');
 
           // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
