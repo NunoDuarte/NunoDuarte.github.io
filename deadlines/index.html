@@ -156,27 +156,6 @@ title: Deadlines
           </div>
           <hr>
         </div> 
-       
-        <div id="corl" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://www.corl2023.org/"><b>CoRL 2024</b></a>
-                  <div class="meta">
-                    November 6-9, 2024 // <a href="http://maps.google.com/?q=Munich, Germany">Munich, Germany</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
 
        <div id="roman" class=" RO-conf ">
           <div class="row">
@@ -192,6 +171,48 @@ title: Deadlines
                   <div>Deadline:
                     <span class="deadline-time"></span>
                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
+	<div id="smc" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://ieeesmc2024.org/"><b>IEEE SMC 2024</b></a>
+                  <div class="meta">
+                    October 7-10, 2024 // <a href="http://maps.google.com/?q=Sarawak, Malaysia">Sarawak, Malaysia</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
+        <div id="corl" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://www.corl2023.org/"><b>CoRL 2024</b></a>
+                  <div class="meta">
+                    November 6-9, 2024 // <a href="http://maps.google.com/?q=Munich, Germany">Munich, Germany</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
                 </div>
                 <div class="calendar"></div>
               </div>
@@ -471,28 +492,6 @@ title: Deadlines
           </div>
           <hr>
         </div>
-
-        <div id="smc" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://ieeesmc2023.org/"><b>IEEE SMC 2024</b></a>
-                  <div class="meta">
-                    October 7-10, 2024 // <a href="http://maps.google.com/?q=Kuala Lumpur, Malaysia">Kuala Lumpur, Malaysia</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
 
         <footer>
           Maintained by <a href="https://github.com/NunoDuarte">@nduarte</a>.
@@ -897,7 +896,7 @@ title: Deadlines
           // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2024-04-15 23:59:59", timezone);
+          var confDate = moment.tz("2024-04-08 23:59:59", timezone);
 
           // render countdown timer
           $('#smc .timer').countdown(confDate.toDate(), function(event) {
