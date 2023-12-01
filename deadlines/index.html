@@ -283,6 +283,27 @@ title: Deadlines
           <hr>
         </div> 
 
+        <div id="accv" class=" CV-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://accv2024.org"><b>ACCV 2024</b></a>
+                  <div class="meta">
+                    December 8-12, 2024 // <a href="http://maps.google.com/?q=Hanoi, Vietnam">Hanoi, Vietnam</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>   
+
         <div id="iccv" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -324,27 +345,6 @@ title: Deadlines
           </div>
           <hr>
         </div>
-
-        <div id="accv" class=" CV-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://accv2024.org"><b>ACCV 2024</b></a>
-                  <div class="meta">
-                    December 8-12, 2024 // <a href="http://maps.google.com/?q=Hanoi, Vietnam">Hanoi, Vietnam</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>       
 
         <div id="aaai" class=" CV-conf ">
           <div class="row">
@@ -1007,7 +1007,7 @@ title: Deadlines
 	  // ------------------------------//---------------------------------//       
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2023-07-05 23:59:59", timezone);
+          var confDate = moment.tz("2024-07-01 23:59:59", timezone);
 
           // render countdown timer
           $('#accv .timer').countdown(confDate.toDate(), function(event) {
