@@ -326,6 +326,28 @@ title: Deadlines
           <hr>
         </div>   
 
+        <div id="nips_ws" class=" ML-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://gaze-meets-ml.github.io/gaze_ml_2023/"><b>Gaze Meets ML 2024</b></a>
+                  <div class="meta">
+                    December 12-14, 2024 // <a href="http://maps.google.com/?q=Vancouver, Canada">Vancouver, Canada</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+         </div>
+
+
         <div id="iccv" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -781,6 +803,42 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#nips').addClass('past');
 
+          // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2024-05-11 23:59:59", timezone);
+
+          // render countdown timer
+          $('#nips_ws .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#nips_ws .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'nips_ws'
+            },
+            data: {
+              // Event title
+              title: 'Gaze Meets ML - NeurIPS workshops 2024 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#nips_ws .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#nips_ws').addClass('past');
 
          // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
