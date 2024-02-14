@@ -224,7 +224,7 @@ title: Deadlines
         <div id="corl" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://www.corl2023.org/"><b>CoRL 2024</b></a>
+                  <a href="https://www.corl.org/"><b>CoRL 2024</b></a>
                   <div class="meta">
                     November 6-9, 2024 // <a href="http://maps.google.com/?q=Munich, Germany">Munich, Germany</a>
                   </div>
@@ -432,12 +432,12 @@ title: Deadlines
           <hr>
         </div>
 
-     <!-- <div id="humanoids" class=" RO-conf ">
+       <div id="humanoids" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://2023.ieee-humanoids.org/"/><b>Humanoids 2023</b></a>
+                  <a href="https://2024.ieee-humanoids.org/"/><b>Humanoids 2024</b></a>
                   <div class="meta">
-                    December 12-14, 2023 // <a href="http://maps.google.com/?q=Texas, USA">Texas, USA</a>
+                    November 22-24, 2024 // <a href="http://maps.google.com/?q=Nancy, France">Nancy, France</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -453,7 +453,7 @@ title: Deadlines
           <hr>
         </div>
 
-        <div id="icsr" class=" RO-conf ">
+<!--        <div id="icsr" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://icsr23.qa/"/><b>ICSR 2023</b></a>
@@ -841,7 +841,7 @@ title: Deadlines
             $('#nips_ws').addClass('past');
 
          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
+<!--          // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
           var confDate = moment.tz("2024-01-15 23:59:59", timezone);
 
@@ -876,7 +876,44 @@ title: Deadlines
           var today = moment();
           if (today.diff(confDate) > 0)
             $('#icdl').addClass('past');
+-->
 
+         // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2024-07-10 23:59:59", timezone);
+
+          // render countdown timer
+          $('#humanoids .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#humanoids .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'humanoids'
+            },
+            data: {
+              // Event title
+              title: 'Humanoids 2024 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#humanoids .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#humanoids').addClass('past');
 
 
          // ------------------------------//---------------------------------//
@@ -917,7 +954,7 @@ title: Deadlines
             $('#roman').addClass('past');
 
 	  // ------------------------------//---------------------------------//        
-          // adjust date according to deadline timezone
+<!--          // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
           var confDate = moment.tz("2024-01-26 23:59:59", timezone);
 
@@ -952,7 +989,7 @@ title: Deadlines
           var today = moment();
           if (today.diff(confDate) > 0)
             $('#icml').addClass('past');
-
+-->
 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "Etc/GMT-8" ;
@@ -1140,7 +1177,7 @@ title: Deadlines
             $('#accv').addClass('past');
                          
  	  // ------------------------------//---------------------------------//        
-          // adjust date according to deadline timezone
+<!--          // adjust date according to deadline timezone
           var timezone = "CET" ;
           var confDate = moment.tz("2024-02-02 23:59:59", timezone);
 
@@ -1175,7 +1212,7 @@ title: Deadlines
           var today = moment();
           if (today.diff(confDate) > 0)
             $('#rss24').addClass('past');
-                                
+-->                                
 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
