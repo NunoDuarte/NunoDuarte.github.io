@@ -158,7 +158,29 @@ title: Deadlines
           <hr>
 	</div> -->
 
-        <div id="iros" class=" RO-conf ">
+        <div id="ai" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://www.ai4robotics.eu/"><b>AI Workshop</b></a>
+                  <div class="meta">
+                    April 5, 2024 // <a href="http://maps.google.com/?q=Tilburg, Netherlands">Tilburg, Netherlands</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div> 
+
+
+	<div id="iros" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://iros2024-abudhabi.org"><b>iROS 2024</b></a>
@@ -543,6 +565,44 @@ title: Deadlines
 	}
 	addUtcTimeZones();
 
+	  // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2024-03-05 23:59:59", timezone);
+
+          // render countdown timer
+          $('#ai .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#ai .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'ai'
+            },
+            data: {
+              // Event title
+              title: 'AI Workshop deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#ai .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#ai').addClass('past');
+	
+
          // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
@@ -840,43 +900,43 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#nips_ws').addClass('past');
 
-         // ------------------------------//---------------------------------//
-<!--          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2024-01-15 23:59:59", timezone);
-
-          // render countdown timer
-          $('#icdl .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#icdl .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'icdl'
-            },
-            data: {
-              // Event title
-              title: 'ICDL 2024 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#icdl .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#icdl').addClass('past');
--->
+//         // ------------------------------//---------------------------------//
+//         // adjust date according to deadline timezone
+//          var timezone = "America/Los_Angeles" ;
+//          var confDate = moment.tz("2024-01-15 23:59:59", timezone);
+//
+//          // render countdown timer
+//          $('#icdl .timer').countdown(confDate.toDate(), function(event) {
+//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+//          });
+//          $('#icdl .deadline-time').html(confDate.toString());
+//
+//          // add calendar button
+//          var myCalendar = createCalendar({
+//            options: {
+//              class: 'calendar-obj',
+//
+//              // You can pass an ID. If you don't, one will be generated for you
+//              id: 'icdl'
+//            },
+//            data: {
+//              // Event title
+//              title: 'ICDL 2024 deadline',
+//
+//              // Event start date
+//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+//
+//              // Event duration
+//              duration: 60,
+//            }
+//          });
+//          document.querySelector('#icdl .calendar').appendChild(myCalendar);
+//
+//          // check if date has passed, add 'past' class to it
+//          var today = moment();
+//          if (today.diff(confDate) > 0)
+//            $('#icdl').addClass('past');
+//
 
          // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
