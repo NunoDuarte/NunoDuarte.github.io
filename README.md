@@ -1,9 +1,5 @@
-## TODO list:
-1. [x] Add Software Chapter in Home Section
-2. [x] Update the Publications section
-
 ## Future Plan:
-- [ ] Update website template. Future Plans
+- [ ] Update website template
 
 ## Website
 web.tecnico.ulisboa.pt/ist173770/
