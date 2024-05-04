@@ -243,12 +243,12 @@ title: Deadlines
           <hr>
         </div>
 
-        <div id="corl" class=" RO-conf ">
+        <div id="bmvc" class=" ML-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://www.corl.org/"><b>CoRL 2024</b></a>
+                  <a href="https://bmvc2023.org/"><b>BMVC  2024</b></a>
                   <div class="meta">
-                    November 6-9, 2024 // <a href="http://maps.google.com/?q=Munich, Germany">Munich, Germany</a>
+                    November 22-24, 2024 // <a href="http://maps.google.com/?q=Aberdeen, UK">Aberdeen, UK</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -262,7 +262,7 @@ title: Deadlines
               </div>
           </div>
           <hr>
-        </div>
+	</div> 
 
         <div id="nips" class=" ML-conf ">
           <div class="row">
@@ -285,12 +285,12 @@ title: Deadlines
           <hr>
          </div>
 
-        <div id="bmvc" class=" ML-conf ">
+        <div id="corl" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://bmvc2023.org/"><b>BMVC  2024</b></a>
+                  <a href="https://www.corl.org/"><b>CoRL 2024</b></a>
                   <div class="meta">
-                    November 22-24, 2024 // <a href="http://maps.google.com/?q=Aberdeen, UK">Aberdeen, UK</a>
+                    November 6-9, 2024 // <a href="http://maps.google.com/?q=Munich, Germany">Munich, Germany</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -304,7 +304,28 @@ title: Deadlines
               </div>
           </div>
           <hr>
-	</div> 
+        </div>
+
+        <div id="icsr" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://icsr24.dk/"/><b>ICSR 2024</b></a>
+                  <div class="meta">
+                    October 23-26, 2024 // <a href="http://maps.google.com/?q=Odense, Denmark">Odense, Denmark</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
 
         <div id="cvpr" class=" CV-conf ">
           <div class="row">
@@ -899,6 +920,44 @@ title: Deadlines
           var today = moment();
           if (today.diff(confDate) > 0)
             $('#nips_ws').addClass('past');
+
+         // ------------------------------//---------------------------------//
+         // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2024-07-05 23:59:59", timezone);
+
+          // render countdown timer
+          $('#icsr .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#icsr .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'icsr'
+            },
+            data: {
+              // Event title
+              title: 'ICSR 2024 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#icsr .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#icsr').addClass('past');
+
 
 //         // ------------------------------//---------------------------------//
 //         // adjust date according to deadline timezone
