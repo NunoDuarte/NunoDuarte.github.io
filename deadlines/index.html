@@ -306,10 +306,31 @@ title: Deadlines
           <hr>
         </div>
 
+       <div id="humanoids" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://2024.ieee-humanoids.org/"/><b>Humanoids 2024</b></a>
+                  <div class="meta">
+                    November 22-24, 2024 // <a href="http://maps.google.com/?q=Nancy, France">Nancy, France</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
         <div id="icsr" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://icsr24.dk/"/><b>ICSR 2024</b></a>
+                  <a href="https://icsr2024.dk/"/><b>ICSR 2024</b></a>
                   <div class="meta">
                     October 23-26, 2024 // <a href="http://maps.google.com/?q=Odense, Denmark">Odense, Denmark</a>
                   </div>
@@ -460,27 +481,6 @@ title: Deadlines
                   <a href="https://www.icar-robotics.org/"><b>ICAR 2023</b></a>
                   <div class="meta">
 			  December 5-8, 2023 // <a href="http://maps.google.com/?q=Abu Dhabi, UAE">Abu Dhabi, UAE</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-       <div id="humanoids" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://2024.ieee-humanoids.org/"/><b>Humanoids 2024</b></a>
-                  <div class="meta">
-                    November 22-24, 2024 // <a href="http://maps.google.com/?q=Nancy, France">Nancy, France</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -1000,7 +1000,7 @@ title: Deadlines
          // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2024-07-10 23:59:59", timezone);
+          var confDate = moment.tz("2024-07-01 23:59:59", timezone);
 
           // render countdown timer
           $('#humanoids .timer').countdown(confDate.toDate(), function(event) {
