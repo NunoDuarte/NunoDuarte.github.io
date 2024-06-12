@@ -7,4 +7,5 @@ personal website which includes
 - miscelaneous
 
 ## Future Plan:
-- [ ] Update website template
+- [ ] Update project pages template
+- [ ] Add code links to publications
