@@ -7,5 +7,5 @@ personal website which includes
 - miscelaneous
 
 ## Future Plan:
-- [ ] Update project pages template
+- [ ] Update project pages template (e.g. [here](https://github.com/nerfies/nerfies.github.io/tree/main)) 
 - [ ] Add code links to publications
