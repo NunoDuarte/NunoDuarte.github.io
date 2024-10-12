@@ -92,31 +92,9 @@ title: Deadlines
               </div>
           </div>
           <hr>
-        </div>
+        </div> -->
 
-	
-        <div id="icml" class=" ML-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://icml.cc/Conferences/2024/Dates"><b>ICML 2024</b></a>
-                  <div class="meta">
-                    July 21-27, 2024 // <a href="http://maps.google.com/?q=Wien, Austria">Wien, Austria</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-        <div id="rss24" class=" RO-conf ">
+<!--        <div id="rss24" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://roboticsconference.org/"><b>RSS 2024</b></a>
@@ -283,6 +261,27 @@ title: Deadlines
           </div>
           <hr>
         </div> 
+
+        <div id="icml" class=" ML-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://icml.cc"><b>ICML 2025</b></a>
+                  <div class="meta">
+                    July 13-19, 2025 // <a href="http://maps.google.com/?q=Vancouver, Canada">Vancouver, Canada</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
 
 	 <div id="rss" class=" RO-conf ">
           <div class="row">
@@ -1033,43 +1032,43 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#roman').addClass('past');
 
-//	  // ------------------------------//---------------------------------//        
-//          // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2024-01-26 23:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#icml .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#icml .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'icml'
-//            },
-//            data: {
-//              // Event title
-//              title: 'ICML 2023 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#icml .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#icml').addClass('past');
-//
+	  // ------------------------------//---------------------------------//        
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2025-01-09 23:59:59", timezone);
+
+          // render countdown timer
+          $('#icml .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#icml .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'icml'
+            },
+            data: {
+              // Event title
+              title: 'ICML 2025 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#icml .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#icml').addClass('past');
+
 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "Etc/GMT-8" ;
