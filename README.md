@@ -10,6 +10,7 @@ personal website which includes
 - ICPR 2025
 - WACV 2025
 - 3DV 2025
+- ICLR 2026
   
 ## Future Plan:
 - [ ] Update project pages template (e.g. [here](https://github.com/nerfies/nerfies.github.io/tree/main)) 
