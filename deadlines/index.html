@@ -73,12 +73,12 @@ title: Deadlines
         </div>
 
       
-	<!-- <div id="rss" class=" RO-conf ">
+	 <div id="rss" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://roboticsconference.org/"><b>RSS 2023</b></a>
+                  <a href="https://roboticsconference.org/"><b>RSS 2025</b></a>
                   <div class="meta">
-                    July 10-14, 2023 // <a href="http://maps.google.com/?q=Daegu, Republic of Korea">Daegu, Republic of Korea</a>
+                    July 21-25, 2025 // <a href="http://maps.google.com/?q=Los Angeles, California">Los Angeles, California</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -92,7 +92,7 @@ title: Deadlines
               </div>
           </div>
           <hr>
-        </div> -->
+        </div> 
 
 <!--        <div id="icdl" class=" RO-conf ">
           <div class="row">
@@ -221,7 +221,7 @@ title: Deadlines
           <hr>
 	</div> -->   
 
-       <div id="icra" class=" RO-conf ">
+<!--       <div id="icra" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://2025.ieee-icra.org"/><b>ICRA 2025</b></a>
@@ -241,7 +241,7 @@ title: Deadlines
           </div>
           <hr>
         </div>
-
+-->
        <div id="soft" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -1294,43 +1294,43 @@ title: Deadlines
 //          if (today.diff(confDate) > 0)
 //            $('#accv').addClass('past');
                          
-// 	  // ------------------------------//---------------------------------//        
-//          // adjust date according to deadline timezone
-//          var timezone = "CET" ;
-//          var confDate = moment.tz("2024-02-02 23:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#rss24 .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#rss24 .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'rss24'
-//            },
-//            data: {
-//              // Event title
-//              title: 'RSS deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#rss24 .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#rss24').addClass('past');
-//                                
+ 	  // ------------------------------//---------------------------------//        
+          // adjust date according to deadline timezone
+          var timezone = "CET" ;
+          var confDate = moment.tz("2025-01-24 23:59:59", timezone);
+
+          // render countdown timer
+          $('#rss .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#rss .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'rss'
+            },
+            data: {
+              // Event title
+              title: 'RSS deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#rss .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#rss').addClass('past');
+                                
 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
