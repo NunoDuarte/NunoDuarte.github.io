@@ -263,6 +263,27 @@ title: Deadlines
           <hr>
         </div>  -->
 
+        <div id="icai" class=" ML-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://2025.ijcai.org"><b>IJCAI 2025</b></a>
+                  <div class="meta">
+                    August 16-22, 2025 // <a href="http://maps.google.com/?q=Montreal, CANADA">Montreal, Canada</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
 	 <div id="rss" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -452,7 +473,7 @@ title: Deadlines
           <hr>
 	</div> 
 
-        <div id="aaai" class=" CV-conf ">
+        <div id="aaai" class=" ML-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://aaai.org/aaai-conference/"><b>AAAI 2024</b></a>
@@ -1186,6 +1207,44 @@ title: Deadlines
           var today = moment();
           if (today.diff(confDate) > 0)
             $('#icml').addClass('past');
+
+	  // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "UTC-12" ;
+          var confDate = moment.tz("2025-01-16 23:59:59", timezone);
+
+          // render countdown timer
+          $('#ijcai .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#ijcai .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'ijcai'
+            },
+            data: {
+              // Event title
+              title: 'IJCAI 2024 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#ijcai .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#ijcai').addClass('past');
+
 
 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
