@@ -515,12 +515,12 @@ title: Deadlines
           <hr>
         </div>
 
-        <div id="bmvc" class=" ML-conf ">
+        <div id="icpr" class=" ML-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://bmvc2024.org/"><b>BMVC  2024</b></a>
+                  <a href="https://icpr2026orgteam.github.io/ICPR2026website/index.html"><b>ICPR 2026</b></a>
                   <div class="meta">
-                    November 25-28, 2024 // <a href="http://maps.google.com/?q=Glasgow, UK">Glasgow, UK</a>
+                    August 16-20, 2026 // <a href="http://maps.google.com/?q=Lyon, France">Lyon, France</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -683,13 +683,13 @@ title: Deadlines
           // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2024-05-12 23:59:59", timezone);
+          var confDate = moment.tz("2024-12-01 23:59:59", timezone);
 
           // render countdown timer
-          $('#bmvc .timer').countdown(confDate.toDate(), function(event) {
+          $('#icpr .timer').countdown(confDate.toDate(), function(event) {
             $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
           });
-          $('#bmvc .deadline-time').html(confDate.toString());
+          $('#icpr .deadline-time').html(confDate.toString());
 
           // add calendar button
           var myCalendar = createCalendar({
@@ -697,11 +697,11 @@ title: Deadlines
               class: 'calendar-obj',
 
               // You can pass an ID. If you don't, one will be generated for you
-              id: 'bmvc'
+              id: 'icpr'
             },
             data: {
               // Event title
-              title: 'BMVC 2024 deadline',
+              title: 'ICPR 2026 deadline',
 
               // Event start date
               start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
@@ -710,12 +710,12 @@ title: Deadlines
               duration: 60,
             }
           });
-          document.querySelector('#bmvc .calendar').appendChild(myCalendar);
+          document.querySelector('#icpr .calendar').appendChild(myCalendar);
 
           // check if date has passed, add 'past' class to it
           var today = moment();
           if (today.diff(confDate) > 0)
-            $('#bmvc').addClass('past');
+            $('#icpr').addClass('past');
 
 
 //          // ------------------------------//---------------------------------//
