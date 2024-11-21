@@ -263,12 +263,12 @@ title: Deadlines
           <hr>
         </div>  -->
 
-        <div id="icml" class=" ML-conf ">
+	 <div id="rss" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://icml.cc"><b>ICML 2025</b></a>
+                  <a href="https://roboticsconference.org/"><b>RSS 2025</b></a>
                   <div class="meta">
-                    July 13-19, 2025 // <a href="http://maps.google.com/?q=Vancouver, Canada">Vancouver, Canada</a>
+                    July 21-25, 2025 // <a href="http://maps.google.com/?q=Los Angeles, California">Los Angeles, California</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -284,12 +284,12 @@ title: Deadlines
           <hr>
         </div>
 
-	 <div id="rss" class=" RO-conf ">
+        <div id="icml" class=" ML-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://roboticsconference.org/"><b>RSS 2025</b></a>
+                  <a href="https://icml.cc"><b>ICML 2025</b></a>
                   <div class="meta">
-                    July 21-25, 2025 // <a href="http://maps.google.com/?q=Los Angeles, California">Los Angeles, California</a>
+                    July 13-19, 2025 // <a href="http://maps.google.com/?q=Vancouver, Canada">Vancouver, Canada</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -697,42 +697,42 @@ title: Deadlines
             $('#bmvc').addClass('past');
 
 
-          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2024-11-15 00:00:00", timezone);
-
-          // render countdown timer
-          $('#cvpr .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#cvpr .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'cvpr'
-            },
-            data: {
-              // Event title
-              title: 'CVPR 2025 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#cvpr .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#cvpr').addClass('past');
+//          // ------------------------------//---------------------------------//
+//          // adjust date according to deadline timezone
+//          var timezone = "America/Los_Angeles" ;
+//          var confDate = moment.tz("2024-11-15 00:00:00", timezone);
+//
+//          // render countdown timer
+//          $('#cvpr .timer').countdown(confDate.toDate(), function(event) {
+//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+//          });
+//          $('#cvpr .deadline-time').html(confDate.toString());
+//
+//          // add calendar button
+//          var myCalendar = createCalendar({
+//            options: {
+//              class: 'calendar-obj',
+//
+//              // You can pass an ID. If you don't, one will be generated for you
+//              id: 'cvpr'
+//            },
+//            data: {
+//              // Event title
+//              title: 'CVPR 2025 deadline',
+//
+//              // Event start date
+//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+//
+//              // Event duration
+//              duration: 60,
+//            }
+//          });
+//          document.querySelector('#cvpr .calendar').appendChild(myCalendar);
+//
+//          // check if date has passed, add 'past' class to it
+//          var today = moment();
+//          if (today.diff(confDate) > 0)
+//            $('#cvpr').addClass('past');
 
           // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
@@ -1036,7 +1036,7 @@ title: Deadlines
 	  // ------------------------------//---------------------------------//        
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2025-01-09 23:59:59", timezone);
+          var confDate = moment.tz("2025-01-31 03:59:59", timezone);
 
           // render countdown timer
           $('#icml .timer').countdown(confDate.toDate(), function(event) {
@@ -1219,42 +1219,43 @@ title: Deadlines
 //          if (today.diff(confDate) > 0)
 //            $('#icra').addClass('past');       
 // 
-           // ------------------------------//---------------------------------//      
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2024-10-31 23:59:59", timezone);
 
-          // render countdown timer
-          $('#soft .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#soft .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'soft'
-            },
-            data: {
-              // Event title
-              title: 'Soft 2025 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#soft .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#soft').addClass('past');
+//           // ------------------------------//---------------------------------//      
+//          // adjust date according to deadline timezone
+//          var timezone = "America/Los_Angeles" ;
+//          var confDate = moment.tz("2024-10-31 23:59:59", timezone);
+//
+//          // render countdown timer
+//          $('#soft .timer').countdown(confDate.toDate(), function(event) {
+//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+//          });
+//          $('#soft .deadline-time').html(confDate.toString());
+//
+//          // add calendar button
+//          var myCalendar = createCalendar({
+//            options: {
+//              class: 'calendar-obj',
+//
+//              // You can pass an ID. If you don't, one will be generated for you
+//              id: 'soft'
+//            },
+//            data: {
+//              // Event title
+//              title: 'Soft 2025 deadline',
+//
+//              // Event start date
+//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+//
+//              // Event duration
+//              duration: 60,
+//            }
+//          });
+//          document.querySelector('#soft .calendar').appendChild(myCalendar);
+//
+//          // check if date has passed, add 'past' class to it
+//          var today = moment();
+//          if (today.diff(confDate) > 0)
+//            $('#soft').addClass('past');
  
 //	  // ------------------------------//---------------------------------//       
 //          // adjust date according to deadline timezone
