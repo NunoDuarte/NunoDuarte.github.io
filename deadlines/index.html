@@ -1210,8 +1210,8 @@ title: Deadlines
 
 	  // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
-          var timezone = "Etc/GMT-12" ;
-          var confDate = moment.tz("2025-01-16 23:59:59", timezone);
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2025-01-17 11:59:59", timezone);
 
           // render countdown timer
           $('#ijcai .timer').countdown(confDate.toDate(), function(event) {
