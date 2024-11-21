@@ -1,4 +1,4 @@
---
+---
 layout: default
 title: Deadlines
 ---
@@ -347,6 +347,27 @@ title: Deadlines
           <hr>
         </div> 
 
+       <div id="roman" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="http://www.ro-man2025.org"><b>Ro-Man 2025</b></a>
+                  <div class="meta">
+                    August 25-29, 2025 // <a href="http://maps.google.com/?q=Eindhoven, The Netherlands">Eindhoven, The Netherlands</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
         <div id="iccv" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
@@ -550,27 +571,6 @@ title: Deadlines
                   <div>Deadline:
                     <span class="deadline-time"></span>
                   </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-       <div id="roman" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="http://www.ro-man2024.org"><b>Ro-Man 2024</b></a>
-                  <div class="meta">
-                    August 26-30, 2024 // <a href="http://maps.google.com/?q=Pasadena, California">Pasadena, California</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
                 </div>
                 <div class="calendar"></div>
               </div>
@@ -1137,7 +1137,7 @@ title: Deadlines
           // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2024-03-20 23:59:59", timezone);
+          var confDate = moment.tz("2025-03-20 23:59:59", timezone);
 
           // render countdown timer
           $('#roman .timer').countdown(confDate.toDate(), function(event) {
@@ -1155,7 +1155,7 @@ title: Deadlines
             },
             data: {
               // Event title
-              title: 'Ro-Man 2024 deadline',
+              title: 'Ro-Man 2025 deadline',
 
               // Event start date
               start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
