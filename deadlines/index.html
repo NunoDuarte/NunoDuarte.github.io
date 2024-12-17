@@ -410,7 +410,28 @@ title: Deadlines
           <hr>
         </div>
 
-       <div id="bmvc" class=" CV-conf ">
+        <div id="corl" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://www.corl.org/"><b>CoRL 2025</b></a>
+                  <div class="meta">
+                    September 27-30, 2025 // <a href="http://maps.google.com/?q=Seul, Korea">Seal, Korea</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
+	<div id="bmvc" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://www.bmva.org/bmvc"><b>BMVC 2025</b></a>
@@ -599,28 +620,6 @@ title: Deadlines
           <hr>
          </div>
 
-        <div id="corl" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://www.corl.org/"><b>CoRL 2024</b></a>
-                  <div class="meta">
-                    November 6-9, 2024 // <a href="http://maps.google.com/?q=Munich, Germany">Munich, Germany</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-
         <footer>
           Maintained by <a href="https://github.com/NunoDuarte">@nduarte</a>.
         </footer>
@@ -688,7 +687,7 @@ title: Deadlines
          // ------------------------------//---------------------------------//
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2024-06-06 23:59:59", timezone);
+          var confDate = moment.tz("2025-04-29 03:59:59", timezone);
 
           // render countdown timer
           $('#corl .timer').countdown(confDate.toDate(), function(event) {
