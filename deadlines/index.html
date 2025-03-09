@@ -136,27 +136,6 @@ title: Deadlines
           <hr>
 	</div> -->
 
-<!--       <div id="icra" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://2025.ieee-icra.org"/><b>ICRA 2025</b></a>
-                  <div class="meta">
-                    May 19-23, 2024 // <a href="http://maps.google.com/?q=Atalanta, USA">Atalanta, USA</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
--->
 
 <!--       <div id="soft" class=" RO-conf ">
           <div class="row">
@@ -473,7 +452,28 @@ title: Deadlines
           <hr>
         </div>  
 
-        <div id="eccv" class=" CV-conf ">
+        <div id="icra" class=" RO-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://2026.ieee-icra.org"/><b>ICRA 2026</b></a>
+                  <div class="meta">
+                    May 19-23, 2026 // <a href="http://maps.google.com/?q=Vienna, Austria">Vienna, Austria</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
+       <div id="eccv" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://eccv2024.ecva.net/"><b>ECCV 2026</b></a>
@@ -1356,43 +1356,43 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#icar').addClass('past');
        
-//          // ------------------------------//---------------------------------//      
-//          // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2024-09-15 23:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#icra .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#icra .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'icra'
-//            },
-//            data: {
-//              // Event title
-//              title: 'ICRA 2024 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#icra .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#icra').addClass('past');       
-// 
+          // ------------------------------//---------------------------------//      
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2025-09-15 23:59:59", timezone);
+
+          // render countdown timer
+          $('#icra .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#icra .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'icra'
+            },
+            data: {
+              // Event title
+              title: 'ICRA 2024 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#icra .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#icra').addClass('past');       
+ 
 
 //           // ------------------------------//---------------------------------//      
 //          // adjust date according to deadline timezone
