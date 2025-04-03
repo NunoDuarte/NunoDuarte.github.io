@@ -284,7 +284,7 @@ title: Deadlines
           <hr>
         </div> 
 -->
-       <div id="roman" class=" RO-conf ">
+<!--       <div id="roman" class=" RO-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="http://www.ro-man2025.org"><b>Ro-Man 2025</b></a>
@@ -305,7 +305,7 @@ title: Deadlines
           <hr>
         </div>
 
-<!--        <div id="iccv" class=" CV-conf ">
+        <div id="iccv" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://iccv.thecvf.com/"><b>ICCV 2025</b></a>
@@ -1132,42 +1132,42 @@ title: Deadlines
             $('#humanoids').addClass('past');
 
 
-          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2025-03-20 23:59:59", timezone);
-
-          // render countdown timer
-          $('#roman .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#roman .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'roman'
-            },
-            data: {
-              // Event title
-              title: 'Ro-Man 2025 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#roman .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#roman').addClass('past');
+//          // ------------------------------//---------------------------------//
+//          // adjust date according to deadline timezone
+//          var timezone = "America/Los_Angeles" ;
+//          var confDate = moment.tz("2025-03-20 23:59:59", timezone);
+//
+//          // render countdown timer
+//          $('#roman .timer').countdown(confDate.toDate(), function(event) {
+//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+//          });
+//          $('#roman .deadline-time').html(confDate.toString());
+//
+//          // add calendar button
+//          var myCalendar = createCalendar({
+//            options: {
+//              class: 'calendar-obj',
+//
+//              // You can pass an ID. If you don't, one will be generated for you
+//              id: 'roman'
+//            },
+//            data: {
+//              // Event title
+//              title: 'Ro-Man 2025 deadline',
+//
+//              // Event start date
+//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+//
+//              // Event duration
+//              duration: 60,
+//            }
+//          });
+//          document.querySelector('#roman .calendar').appendChild(myCalendar);
+//
+//          // check if date has passed, add 'past' class to it
+//          var today = moment();
+//          if (today.diff(confDate) > 0)
+//            $('#roman').addClass('past');
 
 //	  // ------------------------------//---------------------------------//        
 //          // adjust date according to deadline timezone
