@@ -1,6 +1,6 @@
 ## NunoDuarte homepage
 personal website which includes
-- deadlines for desired/top conferences/journals/workshops
+- deadlines for desired top conferences/journals/workshops
 - CV (not updated)
 - GitHub account 
 - YouTube account (research demos and presentations)
