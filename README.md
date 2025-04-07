@@ -9,7 +9,7 @@ personal website which includes
 ## Future conf deadlines
 - ICPR 2026
 - WACV 2025
-- 3DV 2025
+- 3DV 2026
 - ICLR 2026
   
 ## Future Plan:
