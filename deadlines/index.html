@@ -452,7 +452,7 @@ title: Deadlines
           <hr>
         </div>
 
-	<div id="3dv" class=" CV-conf ">
+	<div id="threedv" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
                   <a href="https://3dvconf.github.io/2026/"><b>3DV 2026</b></a>
@@ -1450,7 +1450,44 @@ title: Deadlines
 //          var today = moment();
 //          if (today.diff(confDate) > 0)
 //            $('#soft').addClass('past');
- 
+	  
+	  // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2025-07-12 23:59:59", timezone);
+
+          // render countdown timer
+          $('#threedv .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#threedv .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'threedv'
+            },
+            data: {
+              // Event title
+              title: '3DV 2026 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#threedv .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#threedv').addClass('past');
+		
 	  // ------------------------------//---------------------------------//       
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
@@ -1487,43 +1524,6 @@ title: Deadlines
           var today = moment();
           if (today.diff(confDate) > 0)
             $('#accv').addClass('past');
-
-          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2025-07-12 23:59:59", timezone);
-
-          // render countdown timer
-          $('#3dv .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#3dv .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: '3dv'
-            },
-            data: {
-              // Event title
-              title: '3DV 2026 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#3dv .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#3dv').addClass('past');
 		
 // 	  // ------------------------------//---------------------------------//        
 //          // adjust date according to deadline timezone
