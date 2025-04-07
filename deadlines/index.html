@@ -599,12 +599,12 @@ title: Deadlines
           <hr>
         </div> -->
 
-<!--	<div id="icrl" class=" CV-conf ">
+	<div id="icrl" class=" CV-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://iclr.cc/"><b>ICRL 2024</b></a>
+                  <a href="https://iclr.cc/"><b>ICRL 2026</b></a>
                   <div class="meta">
-                    May 4-8, 2024 // <a href="http://maps.google.com/?q=Vienna, Austria">Vienna, Austria</a>
+                    May 4-8, 2026 // <a href="http://maps.google.com/?q=NA, NA">NA, NA</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -618,7 +618,7 @@ title: Deadlines
               </div>
           </div>
           <hr>
-</div> -->
+        </div> 
 
         <footer>
           Maintained by <a href="https://github.com/NunoDuarte">@nduarte</a>.
@@ -1466,7 +1466,44 @@ title: Deadlines
           var today = moment();
           if (today.diff(confDate) > 0)
             $('#accv').addClass('past');
-                         
+
+	  // ------------------------------//---------------------------------//
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2025-10-01 15:59:00", timezone);
+
+          // render countdown timer
+          $('#iclr .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#iclr .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'iclr'
+            },
+            data: {
+              // Event title
+              title: 'ICLR 2026 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#iclr .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#iclr').addClass('past');
+		
 // 	  // ------------------------------//---------------------------------//        
 //          // adjust date according to deadline timezone
 //          var timezone = "CET" ;
