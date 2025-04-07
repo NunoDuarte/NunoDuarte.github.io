@@ -1526,10 +1526,10 @@ title: Deadlines
           if (today.diff(confDate) > 0)
             $('#3dv').addClass('past');
 		
-	  // ------------------------------//---------------------------------//
+	  // ------------------------------//---------------------------------//       
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2025-10-01 15:59:00", timezone);
+          var confDate = moment.tz("2025-10-01 23:59:59", timezone);
 
           // render countdown timer
           $('#iclr .timer').countdown(confDate.toDate(), function(event) {
