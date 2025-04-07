@@ -7,7 +7,7 @@ personal website which includes
 - miscelaneous
 
 ## Future conf deadlines
-- ICPR 2025
+- ICPR 2026
 - WACV 2025
 - 3DV 2025
 - ICLR 2026
