@@ -7,11 +7,8 @@ personal website which includes
 - miscelaneous
 
 ## Future conf deadlines
-- ICPR 2026
-- WACV 2025
-- 3DV 2026
-- ICLR 2026
-  
+- to be determined...
+
 ## Future Plan:
 - [ ] Update project pages template (e.g. [here](https://github.com/nerfies/nerfies.github.io/tree/main)) 
 - [ ] Add code links to publications
