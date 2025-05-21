@@ -3,1694 +3,203 @@ layout: default
 title: Deadlines
 ---
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <title>AI Conference Deadlines</title> 
-    <meta name="description" content="Countdowns to top CV/ML/Robotics conference deadlines">
-    <meta name="author" content="Nuno Duarte">
-    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="static/css/deadlines.css" media="screen,projection">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="static/js/jquery.countdown.min.js"></script>
-    <script src="static/js/moment.min.js"></script>
-    <script src="static/js/moment-timezone-with-data.min.js"></script>
-    <script src="static/js/store.min.js"></script>
-    <script src="static/js/ouical.min.js"></script>
-
-  </head>
-  <body>
-    <div class="top-strip"></div>
-    <div class="container">
-        <div class="page-header">
-            <div class="row">
-                <div class="col-xs-12 col-sm-8">
-                  <h1>
-                    AI Conference Deadlines 
-                  </h1>
+  <title>AI Conference Deadlines</title>
+  <meta name="description" content="Countdowns to top CV/ML/Robotics conference deadlines">
+  <meta name="author" content="Nuno Duarte">
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="static/css/deadlines.css" media="screen,projection">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="static/js/jquery.countdown.min.js"></script>
+  <script src="static/js/moment.min.js"></script>
+  <script src="static/js/moment-timezone-with-data.min.js"></script>
+  <script src="static/js/store.min.js"></script>
+  <script src="static/js/ouical.min.js"></script>
+</head>
+<body>
+  <div class="top-strip"></div>
+  <div class="container">
+    <div class="page-header">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <h1>
+            AI Conference Deadlines
+          </h1>
+        </div>
+        <div class="meta col-xs-12">
+          Countdowns to top CV/ML/Robotics conference deadlines.
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-12">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <div class="col-md-2 col-xs-5">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="ML-checkbox" class=""> Machine Learning
+                  </label>
                 </div>
-                <div class="meta col-xs-12">
-                  Countdowns to top CV/ML/Robotics conference deadlines.
+              </div>
+              <div class="col-md-2 col-xs-5">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="CV-checkbox" class=""> Computer Vision
+                  </label>
                 </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-xs-12">
-                  <form class="form-horizontal">
-                    <div class="form-group">
-                      
-                      <div class="col-md-2 col-xs-5">
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox" id="ML-checkbox" class=""> Machine Learning
-                          </label>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-2 col-xs-5">
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox" id="CV-checkbox" class=""> Computer Vision
-                          </label>
-                        </div>
-                      </div>
-                         
-                      <div class="col-md-2 col-xs-5">
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox" id="RO-checkbox" class=""> Robotics
-                          </label>
-                        </div>
-                      </div>
-                                 
-                    </div>
-                  </form>
+              </div>
+              <div class="col-md-2 col-xs-5">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="RO-checkbox" class=""> Robotics
+                  </label>
+                </div>
               </div>
             </div>
+          </form>
         </div>
-
-
-<!--        <div id="icdl" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://la.utexas.edu/users/dil/ICDL_Austin_2024/"><b>ICDL 2024</b></a>
-                  <div class="meta">
-                          May 20-23, 2024 // <a href="http://maps.google.com/?q=Austin, Texas">Austin, Texas</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div> -->
-
-<!--        <div id="rss24" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://roboticsconference.org/"><b>RSS 2024</b></a>
-                  <div class="meta">
-                    July 15-19, 2024 // <a href="http://maps.google.com/?q=Delft, Netherlands">Delft, Netherlands</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-	</div> -->
-
-     <!--   <div id="icsr" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://icsr2024.dk/"/><b>ICSR 2024</b></a>
-                  <div class="meta">
-                    October 23-26, 2024 // <a href="http://maps.google.com/?q=Odense, Denmark">Odense, Denmark</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-	</div> -->
-
-
-<!--       <div id="soft" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://robosoft2025.org"/><b>SoftRob 2025</b></a>
-                  <div class="meta">
-                    April 23-26, 2024 // <a href="http://maps.google.com/?q=Lausanne, Switzerland">Lausanne, Switzerland</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div> -->
-
-<!--        <div id="nips_ws" class=" ML-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://gaze-meets-ml.github.io/gaze_ml_2023/"><b>Gaze Meets ML 2024</b></a>
-                  <div class="meta">
-                    December 9-15, 2024 // <a href="http://maps.google.com/?q=Vancouver, Canada">Vancouver, Canada</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-         </div> -->
-
-<!--        <div id="cvpr" class=" CV-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://cvpr.thecvf.com/"><b>CVPR 2024</b></a>
-                  <div class="meta">
-                    Jun 11-15, 2025 // <a href="http://maps.google.com/?q=Tennesse, USA">Tennesse, USA</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>  -->
-
-<!--        <div id="ijcai" class=" ML-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://2025.ijcai.org"><b>IJCAI 2025</b></a>
-                  <div class="meta">
-                    August 16-22, 2025 // <a href="http://maps.google.com/?q=Montreal, CANADA">Montreal, Canada</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-	</div> -->
-
-<!--	 <div id="rss" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://roboticsconference.org/"><b>RSS 2025</b></a>
-                  <div class="meta">
-                    July 21-25, 2025 // <a href="http://maps.google.com/?q=Los Angeles, California">Los Angeles, California</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-</div> -->
-
-<!--        <div id="icml" class=" ML-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://icml.cc"><b>ICML 2025</b></a>
-                  <div class="meta">
-                    July 13-19, 2025 // <a href="http://maps.google.com/?q=Vancouver, Canada">Vancouver, Canada</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-</div> -->
- 
-<!--	<div id="iros" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="http://www.iros25.org/"><b>iROS 2025</b></a>
-                  <div class="meta">
-                    October 19-25, 2025 // <a href="http://maps.google.com/?q=Hangzhou, China">Hangzhou, China</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div> 
--->
-<!--       <div id="roman" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="http://www.ro-man2025.org"><b>Ro-Man 2025</b></a>
-                  <div class="meta">
-                    August 25-29, 2025 // <a href="http://maps.google.com/?q=Eindhoven, The Netherlands">Eindhoven, The Netherlands</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-        <div id="iccv" class=" CV-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://iccv.thecvf.com/"><b>ICCV 2025</b></a>
-                  <div class="meta">
-                    October 20-26, 2025 // <a href="http://maps.google.com/?q=Honolulu, USA">Honolulu, USA</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
--->
-	<div id="smc" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://ieeesmc2025.org/"><b>IEEE SMC 2025</b></a>
-                  <div class="meta">
-                    October 7-10, 2025 // <a href="http://maps.google.com/?q=Vienna, Austria">Vienna, Austria</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-        <div id="corl" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://www.corl.org/"><b>CoRL 2025</b></a>
-                  <div class="meta">
-                    September 27-30, 2025 // <a href="http://maps.google.com/?q=Seoul, Korea">Seoul, Korea</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-        <div id="humanoids" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://2025humanoids.org"><b>Humanoids 2025</b></a>
-                  <div class="meta">
-                    September 30 - October 2, 2025 // <a href="http://maps.google.com/?q=Seoul, Korea">Seoul, Korea</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-	<div id="bmvc" class=" CV-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://bmvc2025.bmva.org"><b>BMVC 2025</b></a>
-                  <div class="meta">
-                    November 25 - November 28, 2025 // <a href="http://maps.google.com/?q=Sheffield, UK">Sheffield, UK</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-        <div id="nips" class=" ML-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://nips.cc/Conferences/2025"><b>NIPS 2025</b></a>
-                  <div class="meta">
-                    December 2-7, 2025 // <a href="http://maps.google.com/?q=San Diego, USA">San Diego, USA</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-         </div>
-
-      <div id="aaai" class=" ML-conf ">
-	   <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://aaai.org/conference/aaai/aaai-26/"><b>AAAI 2026</b></a>
-                  <div class="meta">
-                    January 20-27, 2026 // <a href="http://maps.google.com/?q=Singapore, Singapore">Singapore, Singapore</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-	<div id="threedv" class=" CV-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://3dvconf.github.io/2026/"><b>3DV 2026</b></a>
-                  <div class="meta">
-                    March 24-28, 2026 // <a href="http://maps.google.com/?q=Vancouver, Canada">Vancouver, Canada</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-	</div>  
-	    
-        <div id="wacv" class=" CV-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://wacv2025.thecvf.com"><b>WACV 2026</b></a>
-                  <div class="meta">
-                    Feb 28 - Mar 4, 2025 // <a href="http://maps.google.com/?q=Tucson, USA">Tucson, USA</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>  
-
-        <div id="icra" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://2026.ieee-icra.org"/><b>ICRA 2026</b></a>
-                  <div class="meta">
-                    May 19-23, 2026 // <a href="http://maps.google.com/?q=Vienna, Austria">Vienna, Austria</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-	<div id="iclr" class=" CV-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://iclr.cc/"><b>ICLR 2026</b></a>
-                  <div class="meta">
-                    May 4-8, 2026 // <a href="http://maps.google.com/?q=">NA, NA</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-	</div> 
-
-         <div id="icpr" class=" ML-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://icpr2026orgteam.github.io/ICPR2026website/index.html"><b>ICPR 2026</b></a>
-                  <div class="meta">
-                    August 17-21, 2026 // <a href="http://maps.google.com/?q=Lyon, France">Lyon, France</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-	</div> 
-
-       <div id="eccv" class=" CV-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://eccv2024.ecva.net/"><b>ECCV 2026</b></a>
-                  <div class="meta">
-                    September 29 - October 4, 2026 // <a href="http://maps.google.com/?q=Milano, Italy">Milano, Italy</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                 </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
-
-        <div id="accv" class=" CV-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://accv2026.org"><b>ACCV 2026</b></a>
-                  <div class="meta">
-                    December 8-12, 2026 // <a href="http://maps.google.com/?q=Hanoi, Vietnam">Hanoi, Vietnam</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-	</div>   
-	    
-<!--         <div id="icar" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://www.icar-robotics.org/"><b>ICAR 2023</b></a>
-                  <div class="meta">
-			  December 5-8, 2023 // <a href="http://maps.google.com/?q=Abu Dhabi, UAE">Abu Dhabi, UAE</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div>
--->
-<!--        <div id="icsr" class=" RO-conf ">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <a href="https://icsr23.qa/"/><b>ICSR 2023</b></a>
-                  <div class="meta">
-                    December 4-7, 2023 // <a href="http://maps.google.com/?q=Doha, Qatar">Doha, Qatar</a>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <span class="timer"></span>
-                <div class="deadline">
-                  <div>Deadline:
-                    <span class="deadline-time"></span>
-                  </div>
-                </div>
-                <div class="calendar"></div>
-              </div>
-          </div>
-          <hr>
-        </div> -->
-
-        <footer>
-          Maintained by <a href="https://github.com/NunoDuarte">@nduarte</a>.
-        </footer>
-        <hr>
+      </div>
     </div>
-    <script type="text/javascript" charset="utf-8">
-    	$(function() {
 
-	   	// Make sure this is >= no. of subs
-	    	// Currently not used
-	    	var colors = ['#341f97', '#ee5253', '#2e86de',
-		                      '#ff9f43', '#10ac84', '#222f3e']
-	        // Borrowed from https://github.com/moment/moment-timezone/issues/167
-      		// Adds support for time zones 'UTC-12'..'UTC+12'
-      		function addUtcTimeZones() {
-  		// Moment.js uses the IANA timezone database, which supports generic time zones like 'Etc/GMT+1'.
- 		// However, the signs for these time zones are inverted compared to ISO 8601.
-  		// For more details, see https://github.com/moment/moment-timezone/issues/167
-  		for (let offset = -12; offset <= 12; offset++) {
-    			const posixSign = offset <= 0 ? '+' : '-';
-    			const isoSign = offset >= 0 ? '+' : '-';
-    			const link = `Etc/GMT${posixSign}${Math.abs(offset)}|UTC${isoSign}${Math.abs(offset)}`;
-    			moment.tz.link(link);
-  		}
-	}
-	addUtcTimeZones();
+    <div id="conference-list"></div>
 
-//         // ------------------------------//---------------------------------//
-//          // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2025-03-01 23:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#iros .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#iros .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'iros'
-//            },
-//            data: {
-//              // Event title
-//              title: 'iROS 2024 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#iros .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#iros').addClass('past');
-//
-         // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "Etc/GMT+12" ;
-          var confDate = moment.tz("2025-04-30 23:59:59", timezone);
+    <footer>
+      Maintained by <a href="https://github.com/NunoDuarte">@nduarte</a>.
+    </footer>
+    <hr>
+  </div>
 
-          // render countdown timer
-          $('#corl .timer').countdown(confDate.toDate(), function(event) {
+  <script type="text/javascript" charset="utf-8">
+    $(function () {
+      // Add support for time zones 'UTC-12'..'UTC+12'
+      function addUtcTimeZones() {
+        for (let offset = -12; offset <= 12; offset++) {
+          const posixSign = offset <= 0 ? '+' : '-';
+          const isoSign = offset >= 0 ? '+' : '-';
+          const link = `Etc/GMT${posixSign}${Math.abs(offset)}|UTC${isoSign}${Math.abs(offset)}`;
+          moment.tz.link(link);
+        }
+      }
+      addUtcTimeZones();
+
+      // Set checkboxes
+      var conf_type_data = [
+        { "name": "Machine Learning", "sub": "ML" },
+        { "name": "Computer Vision", "sub": "CV" },
+        { "name": "Robotics", "sub": "RO" }
+      ];
+      var all_subs = [];
+      for (var i = 0; i < conf_type_data.length; i++) {
+        all_subs[i] = conf_type_data[i]['sub'];
+      }
+
+      // Get subjects from URL or browser cache
+      var url = new URL(window.location);
+      var subs = url.searchParams.get('sub');
+      if (subs == undefined) {
+        subs = store.get('aideadlin.es');
+      } else {
+        subs = subs.toUpperCase().split(',');
+      }
+      if (subs === undefined) {
+        subs = all_subs;
+        for (var i = 0; i < subs.length; i++) {
+          $('#' + subs[i] + '-checkbox').prop('checked', true);
+        }
+      } else {
+        for (var i = 0; i < subs.length; i++) {
+          $('#' + subs[i] + '-checkbox').prop('checked', true);
+        }
+      }
+      // Hide unchecked subs
+      for (var i = 0; i < all_subs.length; i++) {
+        if (subs.indexOf(all_subs[i]) < 0) {
+          $('.' + all_subs[i] + '-conf').hide();
+        }
+      }
+      store.set('aideadlin.es', subs);
+
+      // Event handler on checkbox change
+      $('form :checkbox').change(function (e) {
+        var checked = $(this).is(':checked');
+        var cid = $(this).prop('id');
+        var csub = cid.substring(0, cid.length - 9);
+        if (checked == true) {
+          $('.' + csub + '-conf').show();
+          if (subs.indexOf(csub) < 0)
+            subs.push(csub);
+        }
+        else {
+          $('.' + csub + '-conf').hide();
+          var idx = subs.indexOf(csub);
+          if (idx >= 0)
+            subs.splice(idx, 1);
+        }
+        store.set('aideadlin.es', subs);
+      });
+
+      // Load conference data and render dynamically
+      $.getJSON('static/data/conferences.json', function (conferences) {
+        conferences.forEach(function (conf) {
+          // Build conference HTML
+          var confHtml = `
+            <div id="${conf.id}" class="${conf.type}-conf conf-block">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <a href="${conf.link}" target="_blank"><b>${conf.name}</b></a>
+                  <div class="meta">
+                    ${moment(conf.date_start).format('MMMM D')}${conf.date_end ? ' - ' + moment(conf.date_end).format('MMMM D, YYYY') : ''} // <a href="${conf.location_link}" target="_blank">${conf.location}</a>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <span class="timer"></span>
+                  <div class="deadline">
+                    <div>Deadline:
+                      <span class="deadline-time"></span>
+                    </div>
+                  </div>
+                  <div class="calendar"></div>
+                </div>
+              </div>
+              <hr>
+            </div>
+          `;
+          $('#conference-list').append(confHtml);
+
+          // Setup countdown and calendar
+          var confDate = moment.tz(conf.deadline, conf.timezone);
+          $('#' + conf.id + ' .timer').countdown(confDate.toDate(), function (event) {
             $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
           });
-          $('#corl .deadline-time').html(confDate.toString());
+          $('#' + conf.id + ' .deadline-time').html(confDate.toString());
 
-          // add calendar button
           var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'corl'
-            },
+            options: { class: 'calendar-obj', id: conf.id },
             data: {
-              // Event title
-              title: 'CoRL 2024 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
+              title: conf.name + ' deadline',
+              start: confDate.toDate(),
+              duration: 60
             }
           });
-          document.querySelector('#corl .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#corl').addClass('past');
- 
-          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2025-12-01 23:59:59", timezone);
-
-          // render countdown timer
-          $('#icpr .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#icpr .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'icpr'
-            },
-            data: {
-              // Event title
-              title: 'ICPR 2026 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#icpr .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#icpr').addClass('past');
-
-          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "Etc/GMT+12" ;
-          var confDate = moment.tz("2025-05-15 23:59:59", timezone);
-
-          // render countdown timer
-          $('#nips .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#nips .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'nips'
-            },
-            data: {
-              // Event title
-              title: 'NeurIPS 2024 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#nips .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#nips').addClass('past');
-
-	  // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2025-07-15 00:00:00", timezone);
-       
-          // render countdown timer
-          $('#wacv .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#wacv .deadline-time').html(confDate.toString());
-                
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-              
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'wacv'
-            },    
-            data: {
-              // Event title
-              title: 'WACV 2025 deadline',
-            
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-      
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#wacv .calendar').appendChild(myCalendar);
-                
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#wacv').addClass('past');
-
-//          // ------------------------------//---------------------------------//
-//          // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2024-11-15 00:00:00", timezone);
-//
-//          // render countdown timer
-//          $('#cvpr .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#cvpr .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'cvpr'
-//            },
-//            data: {
-//              // Event title
-//              title: 'CVPR 2025 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#cvpr .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#cvpr').addClass('past');
-
-//          // ------------------------------//---------------------------------//
-//          // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2025-03-07 23:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#iccv .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#iccv .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'iccv'
-//            },
-//            data: {
-//              // Event title
-//              title: 'ICCV 2025 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#iccv .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#iccv').addClass('past');
-//
-          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2026-03-07 23:59:59", timezone);
-
-          // render countdown timer
-          $('#eccv .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#eccv .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'eccv'
-            },
-            data: {
-              // Event title
-              title: 'ECCV 2025 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#eccv .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#eccv').addClass('past');
-
-          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "Europe/London" ;
-          var confDate = moment.tz("2025-05-16 23:59:59", timezone);
-
-          // render countdown timer
-          $('#bmvc .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#bmvc .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'bmvc'
-            },
-            data: {
-              // Event title
-              title: 'BMVC 2025 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#bmvc .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#bmvc').addClass('past');
-
-
-//          // ------------------------------//---------------------------------//
-//          // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2024-09-27 23:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#nips_ws .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#nips_ws .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'nips_ws'
-//            },
-//            data: {
-//              // Event title
-//              title: 'Gaze Meets ML - NeurIPS workshops 2024 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#nips_ws .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#nips_ws').addClass('past');
-
-//         // ------------------------------//---------------------------------//
-//         // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2024-07-05 23:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#icsr .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#icsr .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'icsr'
-//            },
-//            data: {
-//              // Event title
-//              title: 'ICSR 2024 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#icsr .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#icsr').addClass('past');
-
-
-             // ------------------------------//---------------------------------//
-             // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2024-01-15 23:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#icdl .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#icdl .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'icdl'
-//            },
-//            data: {
-//              // Event title
-//              title: 'ICDL 2024 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#icdl .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#icdl').addClass('past');
-//
-
-          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2025-05-15 23:59:59", timezone);
-
-          // render countdown timer
-          $('#humanoids .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#humanoids .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'humanoids'
-            },
-            data: {
-              // Event title
-              title: 'Humanoids 2024 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#humanoids .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#humanoids').addClass('past');
-
-
-//          // ------------------------------//---------------------------------//
-//          // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2025-03-20 23:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#roman .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#roman .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'roman'
-//            },
-//            data: {
-//              // Event title
-//              title: 'Ro-Man 2025 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#roman .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#roman').addClass('past');
-
-//	  // ------------------------------//---------------------------------//        
-//          // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2025-01-31 03:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#icml .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#icml .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'icml'
-//            },
-//            data: {
-//              // Event title
-//              title: 'ICML 2025 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#icml .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#icml').addClass('past');
-
-//	  // ------------------------------//---------------------------------//
-//          // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2025-01-17 11:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#ijcai .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#ijcai .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'ijcai'
-//            },
-//            data: {
-//              // Event title
-//              title: 'IJCAI 2024 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#ijcai .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#ijcai').addClass('past');
-
-
-	  // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "Etc/GMT+12" ;
-          var confDate = moment.tz("2025-07-12 23:59:59", timezone);
-
-          // render countdown timer
-          $('#aaai .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#aaai .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'aaai'
-            },
-            data: {
-              // Event title
-              title: 'AAAI 2024 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#aaai .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#aaai').addClass('past');	
-      
-          // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2025-04-20 23:59:59", timezone);
-
-          // render countdown timer
-          $('#smc .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#smc .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'smc'
-            },
-            data: {
-              // Event title
-              title: 'IEEE SMC 2025 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#smc .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#smc').addClass('past');
-
-//          // ------------------------------//---------------------------------//
-//          // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2023-07-14 23:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#icar .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#icar .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'icar'
-//            },
-//            data: {
-//              // Event title
-//              title: 'ICAR 2023 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#icar .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#icar').addClass('past');
-       
-          // ------------------------------//---------------------------------//      
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2025-09-15 23:59:59", timezone);
-
-          // render countdown timer
-          $('#icra .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#icra .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'icra'
-            },
-            data: {
-              // Event title
-              title: 'ICRA 2024 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#icra .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#icra').addClass('past');       
- 
-
-//           // ------------------------------//---------------------------------//      
-//          // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2024-10-31 23:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#soft .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#soft .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'soft'
-//            },
-//            data: {
-//              // Event title
-//              title: 'Soft 2025 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#soft .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#soft').addClass('past');
-	  
-	  // ------------------------------//---------------------------------//
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2025-07-12 23:59:59", timezone);
-
-          // render countdown timer
-          $('#threedv .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#threedv .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'threedv'
-            },
-            data: {
-              // Event title
-              title: '3DV 2026 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#threedv .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#threedv').addClass('past');
-		
-	  // ------------------------------//---------------------------------//       
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2026-07-01 23:59:59", timezone);
-
-          // render countdown timer
-          $('#accv .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#accv .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'accv'
-            },
-            data: {
-              // Event title
-              title: 'ACCV 2024 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#accv .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#accv').addClass('past');
-
-	  // ------------------------------//---------------------------------//       
-          // adjust date according to deadline timezone
-          var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2025-10-01 23:59:59", timezone);
-
-          // render countdown timer
-          $('#iclr .timer').countdown(confDate.toDate(), function(event) {
-            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-          });
-          $('#iclr .deadline-time').html(confDate.toString());
-
-          // add calendar button
-          var myCalendar = createCalendar({
-            options: {
-              class: 'calendar-obj',
-
-              // You can pass an ID. If you don't, one will be generated for you
-              id: 'iclr'
-            },
-            data: {
-              // Event title
-              title: 'ICLR 2026 deadline',
-
-              // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-
-              // Event duration
-              duration: 60,
-            }
-          });
-          document.querySelector('#iclr .calendar').appendChild(myCalendar);
-
-          // check if date has passed, add 'past' class to it
-          var today = moment();
-          if (today.diff(confDate) > 0)
-            $('#iclr').addClass('past');
-		
-// 	  // ------------------------------//---------------------------------//        
-//          // adjust date according to deadline timezone
-//          var timezone = "CET" ;
-//          var confDate = moment.tz("2025-01-31 23:59:59", timezone);
-//
-//          // render countdown timer
-//          $('#rss .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#rss .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'rss'
-//            },
-//            data: {
-//              // Event title
-//              title: 'RSS deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#rss .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#rss').addClass('past');
-                                
-//	  // ------------------------------//---------------------------------//
-//          // adjust date according to deadline timezone
-//          var timezone = "America/Los_Angeles" ;
-//          var confDate = moment.tz("2023-09-11 15:59:00", timezone);
-//
-//          // render countdown timer
-//          $('#icrl .timer').countdown(confDate.toDate(), function(event) {
-//            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
-//          });
-//          $('#icrl .deadline-time').html(confDate.toString());
-//
-//          // add calendar button
-//          var myCalendar = createCalendar({
-//            options: {
-//              class: 'calendar-obj',
-//
-//              // You can pass an ID. If you don't, one will be generated for you
-//              id: 'icrl'
-//            },
-//            data: {
-//              // Event title
-//              title: 'ICRL 2024 deadline',
-//
-//              // Event start date
-//              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
-//
-//              // Event duration
-//              duration: 60,
-//            }
-//          });
-//          document.querySelector('#icrl .calendar').appendChild(myCalendar);
-//
-//          // check if date has passed, add 'past' class to it
-//          var today = moment();
-//          if (today.diff(confDate) > 0)
-//            $('#icrl').addClass('past');
-               
-      
-	   // -----------------------------------//-----------------------------//
-
-	// Set checkboxes
-	  var conf_type_data = [{"name":"Machine Learning","sub":"ML"},{"name":"Computer Vision","sub":"CV"},{"name":"Robotics","sub":"RO"}];
-		        var all_subs = [];
-		               for (var i = 0; i < conf_type_data.length; i++) {
-			                 all_subs[i] = conf_type_data[i]['sub'];
-			          }
-
-	        // Get subjects from URL
-	        var url = new URL(window.location);
-        var subs = url.searchParams.get('sub');
-        if (subs == undefined) {
-	           subs = store.get('aideadlin.es');
-	           } else {
-		           subs = subs.toUpperCase().split(',');
-		        }
-        // Get subjects from browser cache
-        if (subs === undefined) {
-	          subs = all_subs;
-	            for (var i = 0; i < subs.length; i++) {
-		              $('#' + subs[i] + '-checkbox').prop('checked', true);
-		            }
-              } else {
-            for (var i = 0; i < subs.length; i++) {
-            $('#' + subs[i] + '-checkbox').prop('checked', true);
+          document.querySelector('#' + conf.id + ' .calendar').appendChild(myCalendar);
+
+          // Mark as past if deadline passed
+          if (moment().diff(confDate) > 0)
+            $('#' + conf.id).addClass('past');
+        });
+
+        // Hide unchecked subs after rendering
+        for (var i = 0; i < all_subs.length; i++) {
+          if (subs.indexOf(all_subs[i]) < 0) {
+            $('.' + all_subs[i] + '-conf').hide();
           }
         }
-        // Hide unchecked subs
-        for (var i = 0; i < all_subs.length; i++) {
-	          if (subs.indexOf(all_subs[i]) < 0) {
-		              $('.' + all_subs[i] + '-conf').hide();
-		              }
-            }
-        store.set('aideadlin.es', subs);
-
-        // Event handler on checkbox change
-        $('form :checkbox').change(function(e) {
-	          var checked = $(this).is(':checked');
-	            var cid = $(this).prop('id');
-	            var csub = cid.substring(0, cid.length - 9);
-	          if (checked == true) {
-	                  $('.' + csub + '-conf').show();
-	            if (subs.indexOf(csub) < 0)
-	                subs.push(csub);
-          }
-          else {
-            $('.' + csub + '-conf').hide();
-            var idx = subs.indexOf(csub);
-            if (idx >= 0)
-	              subs.splice(idx, 1);
-          }
-          console.log(subs);
-        });
-    });	
-   </script>
-  <body>
+      });
+    });
+  </script>
+</body>

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "aaai",
+    "name": "AAAI 2026",
+    "link": "https://aaai.org/conference/aaai/aaai-26/",
+    "location": "Singapore, Singapore",
+    "location_link": "http://maps.google.com/?q=Singapore, Singapore",
+    "date_start": "2026-01-20",
+    "date_end": "2026-01-27",
+    "deadline": "2025-07-12 23:59:59",
+    "timezone": "Etc/GMT+12",
+    "type": "ML"
+  },
+  {
+    "id": "threedv",
+    "name": "3DV 2026",
+    "link": "https://3dvconf.github.io/2026/",
+    "location": "Vancouver, Canada",
+    "location_link": "http://maps.google.com/?q=Vancouver, Canada",
+    "date_start": "2026-03-24",
+    "date_end": "2026-03-28",
+    "deadline": "2025-07-12 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "CV"
+  },
+  {
+    "id": "wacv",
+    "name": "WACV 2026",
+    "link": "https://wacv2025.thecvf.com",
+    "location": "Tucson, USA",
+    "location_link": "http://maps.google.com/?q=Tucson, USA",
+    "date_start": "2025-02-28",
+    "date_end": "2025-03-04",
+    "deadline": "2025-07-15 00:00:00",
+    "timezone": "America/Los_Angeles",
+    "type": "CV"
+  },
+  {
+    "id": "icra",
+    "name": "ICRA 2026",
+    "link": "https://2026.ieee-icra.org/",
+    "location": "Vienna, Austria",
+    "location_link": "http://maps.google.com/?q=Vienna, Austria",
+    "date_start": "2026-05-19",
+    "date_end": "2026-05-23",
+    "deadline": "2025-09-15 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "RO"
+  },
+  {
+    "id": "iclr",
+    "name": "ICLR 2026",
+    "link": "https://iclr.cc/",
+    "location": "NA, NA",
+    "location_link": "http://maps.google.com/?q=",
+    "date_start": "2026-05-04",
+    "date_end": "2026-05-08",
+    "deadline": "2025-10-01 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "CV"
+  },
+  {
+    "id": "icpr",
+    "name": "ICPR 2026",
+    "link": "https://icpr2026orgteam.github.io/ICPR2026website/index.html",
+    "location": "Lyon, France",
+    "location_link": "http://maps.google.com/?q=Lyon, France",
+    "date_start": "2026-08-17",
+    "date_end": "2026-08-21",
+    "deadline": "2025-12-01 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "ML"
+  },
+  {
+    "id": "eccv",
+    "name": "ECCV 2026",
+    "link": "https://eccv2024.ecva.net/",
+    "location": "Milano, Italy",
+    "location_link": "http://maps.google.com/?q=Milano, Italy",
+    "date_start": "2026-09-29",
+    "date_end": "2026-10-04",
+    "deadline": "2026-03-07 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "CV"
+  },
+  {
+    "id": "accv",
+    "name": "ACCV 2026",
+    "link": "https://accv2026.org",
+    "location": "Hanoi, Vietnam",
+    "location_link": "http://maps.google.com/?q=Hanoi, Vietnam",
+    "date_start": "2026-12-08",
+    "date_end": "2026-12-12",
+    "deadline": "2026-07-01 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "CV"
+  }
+]
