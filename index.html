@@ -3,6 +3,44 @@ layout: default
 title: Nuno Ferreira Duarte
 ---
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* Use percentages for table width */
+table {
+    width: 100%; /* Instead of a fixed width like 800px */
+}
+
+/* Use relative units for font sizes */
+h1 {
+    font-size: 2em; /* Default font size */
+}
+
+img {
+    max-width: 100%; /* Ensures images scale within their container */
+    height: auto;    /* Maintains aspect ratio */
+    width: 400px;    /* Default width for larger devices */
+}
+
+/* Media query for small devices (e.g., smartphones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 0.15em; /* Smaller font size for smartphones */
+    }
+
+    td {
+        font-size: 0.6em; /* Adjust table text size */
+    }
+
+    img {
+        width: 1080px; /* Smaller width for smartphones */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Center the image if needed */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+}
+</style>
+
 <h1> 
 	Nuno Ferreira Duarte
 </h1>
