@@ -80,3 +80,93 @@ div.video-responsive iframe{
 	max-height: 315px;
     position:absolute;
 }
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+    margin: 2rem 0;
+  }
+  
+  .profile-image {
+    flex: 0 0 auto;
+  }
+  
+  .profile-image img {
+    width: 140px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .profile-bio {
+    flex: 1;
+    line-height: 1.4;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+/* Add to existing CSS */
+.publications {
+    display: grid;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .publication-card {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 3fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .publication-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .publication-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+  
+  .publication-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .publication-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .publication-authors {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .publication-card {
+      grid-template-columns: 1fr;
+    }
+    .publication-image {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+    .publication-content {
+      text-align: center;
+    }
+  }
