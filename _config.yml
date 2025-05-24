@@ -1,4 +1,5 @@
 name: Nuno Ferreira Duarte
+description: Personal Academic Website
+url: "https://nunoduarte.github.io"
 markdown: kramdown
-
-permalink: /blog/:year/:month/:day/:title
+theme: jekyll-theme-minimal
