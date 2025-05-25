@@ -102,6 +102,7 @@ div.video-responsive iframe{
     flex: 1;
     line-height: 1.6;
     font-size: 0.9rem;
+    position: relative;
   }
   
   .bio-main {
@@ -136,23 +137,30 @@ div.video-responsive iframe{
         content: '▼';
         position: absolute;
         right: 0;
-        font-size: 0.8em;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease;
     }
   
     .bio-extended {
         display: none;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-out;
+        transition: all 0.3s ease;
     }
 
     .bio-main:focus {
         outline: none;
     }
 
+    .bio-main:focus::after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
     .bio-main:focus + .bio-extended {
-        max-height: 2000px;
-        transition: max-height 0.5s ease-in;
+        display: block;
+    }
+
+    .bio-main:focus-visible {
+        outline: none;
     }
 
     .bio-checkbox:checked ~ .bio-extended {
@@ -161,6 +169,11 @@ div.video-responsive iframe{
 
     .bio-checkbox:checked ~ .bio-main::after {
         content: '▲';
+    }
+
+    .bio-main:focus ~ .bio-extended,
+    .bio-main:active ~ .bio-extended {
+        display: block;
     }
 }
 
