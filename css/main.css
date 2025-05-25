@@ -100,8 +100,16 @@ div.video-responsive iframe{
   
   .profile-bio {
     flex: 1;
-    line-height: 1.4;
+    line-height: 1.6;
     font-size: 0.9rem;
+  }
+  
+  .bio-main {
+    margin-bottom: 1rem;
+  }
+  
+  .bio-extended {
+    display: block;
   }
   
   @media (max-width: 768px) {
@@ -111,6 +119,33 @@ div.video-responsive iframe{
       text-align: center;
     }
   }
+
+  @media (max-width: 768px) {
+    .bio-main {
+        cursor: pointer;
+        position: relative;
+        padding-right: 20px;
+    }
+    
+    .bio-main::after {
+        content: '▼';
+        position: absolute;
+        right: 0;
+        font-size: 0.8em;
+    }
+  
+    .bio-extended {
+        display: none;
+    }
+  
+    .profile-bio.show-extended .bio-extended {
+        display: block;
+    }
+  
+    .profile-bio.show-extended .bio-main::after {
+        content: '▲';
+    }
+}
 
 /* Add to existing CSS */
 .publications {
@@ -170,3 +205,13 @@ div.video-responsive iframe{
       text-align: center;
     }
   }
+
+  @media (max-width: 768px) {
+    .bio-extended {
+        display: none;
+    }
+    .bio-main {
+        display: block;
+        margin-bottom: 1rem;
+    }
+}
