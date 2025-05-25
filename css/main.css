@@ -141,6 +141,18 @@ div.video-responsive iframe{
   
     .bio-extended {
         display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .bio-main:focus {
+        outline: none;
+    }
+
+    .bio-main:focus + .bio-extended {
+        max-height: 2000px;
+        transition: max-height 0.5s ease-in;
     }
 
     .bio-checkbox:checked ~ .bio-extended {
