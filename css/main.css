@@ -105,11 +105,16 @@ div.video-responsive iframe{
   }
   
   .bio-main {
+    display: block;
     margin-bottom: 1rem;
   }
   
   .bio-extended {
     display: block;
+  }
+
+  .bio-checkbox {
+    display: none;
   }
   
   @media (max-width: 768px) {
@@ -137,12 +142,12 @@ div.video-responsive iframe{
     .bio-extended {
         display: none;
     }
-  
-    .profile-bio.show-extended .bio-extended {
+
+    .bio-checkbox:checked ~ .bio-extended {
         display: block;
     }
-  
-    .profile-bio.show-extended .bio-main::after {
+
+    .bio-checkbox:checked ~ .bio-main::after {
         content: '▲';
     }
 }
