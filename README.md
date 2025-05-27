@@ -12,8 +12,8 @@ personal website which includes
 
 ## Steps to load webpage locally (ideal for testing new template updates or add content):
 1. ```sudo gem install bundler``` or ```sudo gem install bundler -v 2.4.2``` (if newer version is not working)
-2. ```vim Gemfil```
-3. write:
+2. create Gemfile
+3. write to Gemfile:
 ```vim
 source "https://rubygems.org"
 
