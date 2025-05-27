@@ -11,7 +11,7 @@ personal website which includes
 - previous conference info is in static/data/past_conferences.txt
 
 ## Steps to load webpage locally (ideal for testing new template updates or add content):
-1. ```sudo gem install bundler``` or ```sudo gem install bundler -v 2.4.2``` (if version newer version doesn't work
+1. ```sudo gem install bundler``` or ```sudo gem install bundler -v 2.4.2``` (if newer version is not working)
 2. ```vim Gemfil```
 ```vim
 source "https://rubygems.org"
