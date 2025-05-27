@@ -10,4 +10,16 @@ personal website which includes
 - add conference deadline info to statis/data/conferences.json
 - previous conference info is in static/data/past_conferences.txt
 
-## Steps to load webpage locally:
+## Steps to load webpage locally (ideal for testing new template updates or add content):
+1. ```sudo gem install bundler```
+1.1. ```sudo gem install bundler -v 2.4.2``` (if version newer version doesn't work
+2. ```vim Gemfil```
+```vim
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.3.0"
+gem "webrick", "~> 1.7" # Required for Jekyll on Ruby 3.x
+
+```
+4. ```bundle exec jekyll serve```
+5. open ```http://127.0.0.1:4000/```
