@@ -7,6 +7,8 @@ personal website which includes
 - miscelaneous
 
 ## Future conf deadlines
+- Asian Conference on Machine Learning
+### Notes
 - add conference deadline info to statis/data/conferences.json
 - previous conference info is in static/data/past_conferences.txt
 
