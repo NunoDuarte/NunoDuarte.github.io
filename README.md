@@ -4,7 +4,7 @@ personal website which includes
 - CV (per request TODO)
 - GitHub account 
 - YouTube account (research demos and presentations)
-- miscelaneous
+- Relevant Publications and Projects
 
 ## Future conf deadlines
 - Asian Conference on Machine Learning
