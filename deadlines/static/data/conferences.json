@@ -1,4 +1,28 @@
 [
+    {
+    "id": "icar",
+    "name": "ICAR 2025",
+    "link": "http://icar2025.inaut.unsj.edu.ar/index.php",
+    "location": "San Juan, Argentina",
+    "location_link": "http://maps.google.com/?q=San Juan, Argentina",
+    "date_start": "2025-12-02",
+    "date_end": "2025-12-05",
+    "deadline": "2025-07-25 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "RO"
+  },
+  {
+    "id": "hri",
+    "name": "HRI 2026",
+    "link": "https://humanrobotinteraction.org/2026/",
+    "location": "Edinburgh, Scotland",
+    "location_link": "http://maps.google.com/?q=Edinburgh, Scotland",
+    "date_start": "2026-03-16",
+    "date_end": "2026-03-19",
+    "deadline": "2025-09-30 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "RO"
+  },
   {
     "id": "threedv",
     "name": "3DV 2026",
@@ -58,6 +82,18 @@
     "deadline": "2025-10-01 23:59:59",
     "timezone": "America/Los_Angeles",
     "type": "CV"
+  },
+  {
+    "id": "robosoft",
+    "name": "RoboSoft 2026",
+    "link": "https://robosoft2026.sakura.ne.jp/robosoft-wp/wp-content/uploads/2025/05/robosoft2026-v1.pdf",
+    "location": "Kanazawa, Japan",
+    "location_link": "http://maps.google.com/?q=Kanazawa, Japan",
+    "date_start": "2026-04-08",
+    "date_end": "2026-04-11",
+    "deadline": "2025-11-15 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "RO"
   },
   {
     "id": "icpr",
