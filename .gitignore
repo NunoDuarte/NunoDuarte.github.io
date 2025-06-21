@@ -1,0 +1,7 @@
+# Ignore policies directory
+_site/
+.jekyll-cache/
+
+# Ignore all .log files
+Gemfile.lock
+Gemfile
