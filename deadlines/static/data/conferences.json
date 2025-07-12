@@ -12,6 +12,18 @@
     "type": "CV"
   }, 
   {
+    "id": "icar",
+    "name": "ICAR 2025",
+    "link": "http://icar2025.inaut.unsj.edu.ar/index.php",
+    "location": "San Juan, Argentina",
+    "location_link": "http://maps.google.com/?q=San Juan, Argentina",
+    "date_start": "2025-12-02",
+    "date_end": "2025-12-05",
+    "deadline": "2025-07-25 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "RO"
+  },
+  {
     "id": "aaai",
     "name": "AAAI 2026",
     "link": "https://aaai.org/conference/aaai/aaai-26/",
@@ -34,18 +46,6 @@
     "deadline": "2025-08-18 23:59:59",
     "timezone": "America/Los_Angeles",
     "type": "CV"
-  },
-  {
-    "id": "icar",
-    "name": "ICAR 2025",
-    "link": "http://icar2025.inaut.unsj.edu.ar/index.php",
-    "location": "San Juan, Argentina",
-    "location_link": "http://maps.google.com/?q=San Juan, Argentina",
-    "date_start": "2025-12-02",
-    "date_end": "2025-12-05",
-    "deadline": "2025-07-25 23:59:59",
-    "timezone": "America/Los_Angeles",
-    "type": "RO"
   },
   {
     "id": "icra",
