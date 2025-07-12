@@ -3,7 +3,9 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link rel="stylesheet" type="text/css" href="/css/dark-mode.css">
+			<link rel="stylesheet" type="text/css" href="/css/toggle.css">
 		
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-9097QXWNCZ"></script>
@@ -32,7 +34,15 @@
 				<li><a href="/deadlines">Deadlines</a></li>
 				<li><a href="https://orcid.org/0000-0002-1396-6774"><img src="/images/id.png" width="20" height="20" alt="orcid"></a></li>
 				<li><a href="https://www.youtube.com/channel/UCLkuyUdZCrOfcBO32XYm72A"><img src="/images/youtube-icon.png" width="20" height="20" alt="youtube"></a></li>
-
+				<li>
+					<label class="toggle-container">
+						<input type="checkbox" id="darkModeToggle">
+						<span class="slider round">
+							<span class="sun">☀️</span>
+							<span class="moon">🌙</span>
+						</span>
+					</label>
+				</li>
 	
 	    		</ul>
 			</nav>
@@ -41,6 +51,25 @@
 			{{ content }}
 			
 			</div><!-- /.container -->
+			<script>
+				const darkModeToggle = document.getElementById('darkModeToggle');
+				const body = document.body;
+
+				darkModeToggle.addEventListener('change', () => {
+					if (darkModeToggle.checked) {
+						body.classList.add('dark-mode');
+						localStorage.setItem('darkMode', 'enabled');
+					} else {
+						body.classList.remove('dark-mode');
+						localStorage.setItem('darkMode', 'disabled');
+					}
+				});
+
+				if (localStorage.getItem('darkMode') === 'enabled') {
+					darkModeToggle.checked = true;
+					body.classList.add('dark-mode');
+				}
+			</script>
 		</body>	
 		<footer>
 	    	<ul>

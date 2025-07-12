@@ -1,0 +1,79 @@
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #bb86fc;
+}
+
+body.dark-mode a:hover {
+    color: #ffffff;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .publication-card {
+    background: #1e1e1e;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .publication-title {
+    color: #ffffff;
+}
+
+body.dark-mode .publication-authors,
+body.dark-mode .publication-venue {
+    color: #bbbbbb;
+}
+
+body.dark-mode footer {
+    border-top: 1px solid #333333;
+}
+
+body.dark-mode pre {
+    background-color: #1e1e1e;
+    border: 1px solid #333333;
+}
+
+/* Dark mode for deadlines page */
+body.dark-mode .top-strip {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .conf-block {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333333;
+}
+
+body.dark-mode .past {
+    opacity: 0.7;
+}
+
+body.dark-mode .deadline,
+body.dark-mode .meta {
+    color: #bbbbbb;
+}
+
+body.dark-mode .timer {
+    color: #ffffff;
+}
+
+body.dark-mode .checkbox label {
+    color: #ffffff;
+}
+
+body.dark-mode .go-home-btn {
+    background: #bb86fc;
+    color: #121212;
+}
+
+body.dark-mode .bio-main,
+body.dark-mode .bio-extended {
+    color: #ffffff;
+}
