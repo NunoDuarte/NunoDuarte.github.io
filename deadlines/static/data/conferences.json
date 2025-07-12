@@ -1,29 +1,5 @@
 [
   {
-    "id": "threedv",
-    "name": "3DV 2026",
-    "link": "https://3dvconf.github.io/2026/",
-    "location": "Vancouver, Canada",
-    "location_link": "http://maps.google.com/?q=Vancouver, Canada",
-    "date_start": "2026-03-20",
-    "date_end": "2026-03-23",
-    "deadline": "2025-08-18 23:59:59",
-    "timezone": "America/Los_Angeles",
-    "type": "CV"
-  },
-  {
-    "id": "aaai",
-    "name": "AAAI 2026",
-    "link": "https://aaai.org/conference/aaai/aaai-26/",
-    "location": "Singapore, Singapore",
-    "location_link": "http://maps.google.com/?q=Singapore, Singapore",
-    "date_start": "2026-01-20",
-    "date_end": "2026-01-27",
-    "deadline": "2025-07-12 23:59:59",
-    "timezone": "Etc/GMT+12",
-    "type": "ML"
-  },
-  {
     "id": "wacv",
     "name": "WACV 2026",
     "link": "https://wacv2025.thecvf.com",
@@ -32,6 +8,30 @@
     "date_start": "2025-02-28",
     "date_end": "2025-03-04",
     "deadline": "2025-07-15 00:00:00",
+    "timezone": "America/Los_Angeles",
+    "type": "CV"
+  }, 
+  {
+    "id": "aaai",
+    "name": "AAAI 2026",
+    "link": "https://aaai.org/conference/aaai/aaai-26/",
+    "location": "Singapore, Singapore",
+    "location_link": "http://maps.google.com/?q=Singapore, Singapore",
+    "date_start": "2026-01-20",
+    "date_end": "2026-01-27",
+    "deadline": "2025-07-25 23:59:59",
+    "timezone": "Etc/GMT+12",
+    "type": "ML"
+  },
+  {
+    "id": "threedv",
+    "name": "3DV 2026",
+    "link": "https://3dvconf.github.io/2026/",
+    "location": "Vancouver, Canada",
+    "location_link": "http://maps.google.com/?q=Vancouver, Canada",
+    "date_start": "2026-03-20",
+    "date_end": "2026-03-23",
+    "deadline": "2025-08-18 23:59:59",
     "timezone": "America/Los_Angeles",
     "type": "CV"
   },
