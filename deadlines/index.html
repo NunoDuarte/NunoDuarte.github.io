@@ -8,6 +8,8 @@
   <meta name="author" content="Nuno Duarte">
   <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css?v=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/dark-mode.css">
+  <link rel="stylesheet" type="text/css" href="/css/toggle.css">
   <link rel="stylesheet" type="text/css" href="static/css/deadlines.css" media="screen,projection">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script type="text/javascript" src="static/js/jquery.countdown.min.js"></script>
@@ -26,6 +28,15 @@
             AI Conference Deadlines
           </h1>
           <a href="/" class="go-home-btn" style="padding: 8px 16px; background: #007bff; color: #fff; border-radius: 4px; text-decoration: none; font-size: 18px; margin-left: 10px;">&#8592; Home</a>
+        </div>
+        <div class="col-xs-12 col-sm-4" style="display: flex; justify-content: flex-end; align-items: center;">
+            <label class="toggle-container">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </span>
+            </label>
         </div>
         <div class="meta col-xs-12">
           Countdowns to top CV/ML/Robotics conference deadlines.
@@ -198,5 +209,24 @@
         }
       });
     });
+  </script>
+  <script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('change', () => {
+        if (darkModeToggle.checked) {
+            body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        darkModeToggle.checked = true;
+        body.classList.add('dark-mode');
+    }
   </script>
 </body>
