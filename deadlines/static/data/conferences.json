@@ -1,17 +1,5 @@
 [
   {
-    "id": "wacv",
-    "name": "WACV 2026",
-    "link": "https://wacv.thecvf.com/",
-    "location": "Tucson, USA",
-    "location_link": "http://maps.google.com/?q=Tucson, USA",
-    "date_start": "2025-02-28",
-    "date_end": "2025-03-04",
-    "deadline": "2025-07-18 00:00:00",
-    "timezone": "America/Los_Angeles",
-    "type": "CV"
-  }, 
-  {
     "id": "icar",
     "name": "ICAR 2025",
     "link": "http://icar2025.inaut.unsj.edu.ar/index.php",
