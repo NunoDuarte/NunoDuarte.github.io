@@ -60,18 +60,6 @@
     "type": "RO"
   },
   {
-    "id": "eccv",
-    "name": "ECCV 2026",
-    "link": "https://eccv2024.ecva.net/",
-    "location": "Milano, Italy",
-    "location_link": "http://maps.google.com/?q=Milano, Italy",
-    "date_start": "2026-09-29",
-    "date_end": "2026-10-04",
-    "deadline": "2026-03-07 23:59:59",
-    "timezone": "America/Los_Angeles",
-    "type": "CV"
-  },
-  {
     "id": "iros",
     "name": "iROS 2026",
     "link": "http://www.iros26.org/",
@@ -84,6 +72,18 @@
     "type": "RO"
   },
   {
+    "id": "eccv",
+    "name": "ECCV 2026",
+    "link": "https://eccv2024.ecva.net/",
+    "location": "Milano, Italy",
+    "location_link": "http://maps.google.com/?q=Milano, Italy",
+    "date_start": "2026-09-29",
+    "date_end": "2026-10-04",
+    "deadline": "2026-03-07 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "CV"
+  },
+  {
     "id": "roman",
     "name": "Ro-Man 2026",
     "link": "https://www.brain.kyutech.ac.jp/~s-yasukawa/ro-man2026/",
@@ -92,6 +92,18 @@
     "date_start": "2026-08-24",
     "date_end": "2026-08-28",
     "deadline": "2026-03-15 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "RO"
+  },
+  {
+    "id": "corl",
+    "name": "CoRL 2026",
+    "link": "http://www.corl.org/",
+    "location": "NA, NA",
+    "location_link": "http://maps.google.com/?q=NA, NA",
+    "date_start": "2026-09-27",
+    "date_end": "2026-09-30",
+    "deadline": "2026-04-23 23:59:59",
     "timezone": "America/Los_Angeles",
     "type": "RO"
   },
