@@ -36,6 +36,18 @@
     "type": "ML"
   },
   {
+    "id": "rss",
+    "name": "RSS 2026",
+    "link": "https://roboticsconference.org/",
+    "location": "Sydney, Australia",
+    "location_link": "http://maps.google.com/?q=Sydney, Australia",
+    "date_start": "2026-07-21",
+    "date_end": "2026-07-25",
+    "deadline": "2026-01-31 23:59:59",
+    "timezone": "CET",
+    "type": "RO"
+  },
+  {
     "id": "eccv",
     "name": "ECCV 2026",
     "link": "https://eccv2024.ecva.net/",

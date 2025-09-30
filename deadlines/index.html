@@ -152,7 +152,7 @@
       });
 
       // Load conference data and render dynamically
-      $.getJSON('static/data/conferences.json', function (conferences) {
+      $.getJSON('static/data/conferences.json?v=' + new Date().getTime(), function (conferences) {
         conferences.forEach(function (conf) {
           // Build conference HTML
           var confHtml = `
