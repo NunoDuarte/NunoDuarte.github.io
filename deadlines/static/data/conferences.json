@@ -1,17 +1,5 @@
 [
   {
-    "id": "hri",
-    "name": "HRI 2026",
-    "link": "https://humanrobotinteraction.org/2026/",
-    "location": "Edinburgh, Scotland",
-    "location_link": "http://maps.google.com/?q=Edinburgh, Scotland",
-    "date_start": "2026-03-16",
-    "date_end": "2026-03-19",
-    "deadline": "2025-09-30 23:59:59",
-    "timezone": "America/Los_Angeles",
-    "type": "RO"
-  },
-  {
     "id": "robosoft",
     "name": "RoboSoft 2026",
     "link": "https://www.robosoft2026.org",
