@@ -19,8 +19,8 @@
     "location_link": "http://maps.google.com/?q=Denver, USA",
     "date_start": "2026-06-03",
     "date_end": "2026-06-07",
-    "deadline": "2025-11-13 00:00:00",
-    "timezone": "America/Los_Angeles",
+    "deadline": "2025-11-06 00:00:00",
+    "timezone": "Etc/GMT+12",
     "type": "CV"
   },
   {
@@ -31,8 +31,8 @@
     "location_link": "http://maps.google.com/?q=Lyon, France",
     "date_start": "2026-08-17",
     "date_end": "2026-08-21",
-    "deadline": "2025-12-01 23:59:59",
-    "timezone": "America/Los_Angeles",
+    "deadline": "2025-12-20 23:59:59",
+    "timezone": "Etc/GMT+12",
     "type": "ML"
   },
   {
