@@ -19,7 +19,7 @@
     "location_link": "http://maps.google.com/?q=Denver, USA",
     "date_start": "2026-06-03",
     "date_end": "2026-06-07",
-    "deadline": "2025-11-06 00:00:00",
+    "deadline": "2025-11-06 23:59:59",
     "timezone": "Etc/GMT+12",
     "type": "CV"
   },
