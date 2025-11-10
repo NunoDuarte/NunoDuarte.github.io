@@ -1,4 +1,16 @@
   {
+    "id": "robosoft",
+    "name": "RoboSoft 2026",
+    "link": "https://www.robosoft2026.org",
+    "location": "Kanazawa, Japan",
+    "location_link": "http://maps.google.com/?q=Kanazawa, Japan",
+    "date_start": "2026-04-08",
+    "date_end": "2026-04-11",
+    "deadline": "2025-10-30 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "RO"
+  },
+  {
     "id": "icdl",
     "name": "ICDL 2024",
     "link": "https://la.utexas.edu/users/dil/ICDL_Austin_2024/",
