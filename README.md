@@ -6,11 +6,12 @@ personal website which includes
 - YouTube account (research demos and presentations)
 - Relevant Publications and Projects
 
+## How to update deadlines
+1. add conference deadline info to statis/data/conferences.json
+2. previous conference info is in static/data/past_conferences.txt
+
 ## Future conf deadlines
 - Asian Conference on Machine Learning
-### Notes
-- add conference deadline info to statis/data/conferences.json
-- previous conference info is in static/data/past_conferences.txt
 
 ## Steps to load webpage locally 
 ideal for testing new template updates or add content
