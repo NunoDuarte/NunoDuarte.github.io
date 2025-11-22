@@ -12,6 +12,18 @@
     "type": "ML"
   },
   {
+    "id": "biorob",
+    "name": "BioRob 2026",
+    "link": "https://2026.ieeebiorob.org",
+    "location": "Edmonton, Alberta, Canada",
+    "location_link": "http://maps.google.com/?q=Edmonton, Alberta, Canada",
+    "date_start": "2026-08-01",
+    "date_end": "2026-08-04",
+    "deadline": "2026-01-10 23:59:59",
+    "timezone": "CET",
+    "type": "RO"
+  },
+  {
     "id": "rss",
     "name": "RSS 2026",
     "link": "https://roboticsconference.org/",
