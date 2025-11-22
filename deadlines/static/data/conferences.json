@@ -87,12 +87,12 @@
     "id": "accv",
     "name": "ACCV 2026",
     "link": "https://accv2026.org",
-    "location": "Hanoi, Vietnam",
-    "location_link": "http://maps.google.com/?q=Hanoi, Vietnam",
+    "location": "Osaka, Japan",
+    "location_link": "http://maps.google.com/?q=Osaka, Japan",
     "date_start": "2026-12-08",
     "date_end": "2026-12-12",
-    "deadline": "2026-07-01 23:59:59",
-    "timezone": "America/Los_Angeles",
+    "deadline": "2026-07-05 23:59:59",
+    "timezone": "Etc/GMT+12",
     "type": "CV"
   },
   {
