@@ -47,18 +47,6 @@
     "type": "RO"
   },
   {
-    "id": "soft",
-    "name": "SoftRob 2025",
-    "link": "https://robosoft2025.org/",
-    "location": "Lausanne, Switzerland",
-    "location_link": "http://maps.google.com/?q=Lausanne, Switzerland",
-    "date_start": "2024-04-23",
-    "date_end": "2024-04-26",
-    "deadline": "2024-10-31 23:59:59",
-    "timezone": "America/Los_Angeles",
-    "type": "RO"
-  },
-  {
     "id": "nips_ws",
     "name": "Gaze Meets ML 2024",
     "link": "https://gaze-meets-ml.github.io/gaze_ml_2023/",
@@ -69,18 +57,6 @@
     "deadline": "2024-09-27 23:59:59",
     "timezone": "America/Los_Angeles",
     "type": "ML"
-  },
-  {
-    "id": "cvpr",
-    "name": "CVPR 2025",
-    "link": "https://cvpr.thecvf.com/",
-    "location": "Tennesse, USA",
-    "location_link": "http://maps.google.com/?q=Tennesse, USA",
-    "date_start": "2025-06-11",
-    "date_end": "2025-06-15",
-    "deadline": "2024-11-15 00:00:00",
-    "timezone": "America/Los_Angeles",
-    "type": "CV"
   },
   {
     "id": "ijcai",
