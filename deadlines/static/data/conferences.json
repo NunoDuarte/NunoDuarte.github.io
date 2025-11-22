@@ -60,6 +60,18 @@
     "type": "CV"
   },
   {
+    "id": "icdl",
+    "name": "ICDL 2026",
+    "link": "https://attend.ieee.org/icdl-2026/",
+    "location": "Kyoto, Japan",
+    "location_link": "http://maps.google.com/?q=Kyoto, Japan",
+    "date_start": "2026-09-15",
+    "date_end": "2026-09-18",
+    "deadline": "2026-03-13 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "RO"
+  },
+  {
     "id": "roman",
     "name": "Ro-Man 2026",
     "link": "https://www.brain.kyutech.ac.jp/~s-yasukawa/ro-man2026/",
