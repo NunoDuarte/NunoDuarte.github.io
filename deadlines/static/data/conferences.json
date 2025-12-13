@@ -108,6 +108,18 @@
     "type": "ML"
   },
   {
+  "id": "rulemlrr",
+  "name": "RuleML+ biomedical RR 2026",
+  "link": "https://2026.declarativeai.net/events/ruleml-rr",
+  "location": "Vilnius, Lithuania",
+  "location_link": null,
+  "date_start": "2026-08-24",
+  "date_end": "2026-08-26",
+  "deadline": "2026-05-15 23:59:59",
+  "timezone": "AoE",
+  "type": "DB"
+  },
+  {
     "id": "accv",
     "name": "ACCV 2026",
     "link": "https://accv2026.org",
