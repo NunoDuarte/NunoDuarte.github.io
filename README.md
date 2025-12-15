@@ -35,7 +35,7 @@ sudo gem install bundler -v 2.4.2
 1. Create a `Gemfile` in the project root
 
 2. Add the following content to `Gemfile`:
-```ruby
+```vim
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.0"
