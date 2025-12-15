@@ -1,14 +1,14 @@
 ## NunoDuarte homepage
 personal website which includes
 - deadlines for desired top conferences/journals/workshops
-- CV (per request TODO)
+- CV
 - GitHub account 
 - YouTube account (research demos and presentations)
 - Relevant Publications and Projects
 
 ## How to update deadlines
-1. add conference deadline info to statis/data/conferences.json
-2. previous conference info is in static/data/past_conferences.txt
+- add conference deadline info to statis/data/conferences.json
+- previous conference info is in static/data/past_conferences.txt
 
 
 ## Steps to load webpage locally 
