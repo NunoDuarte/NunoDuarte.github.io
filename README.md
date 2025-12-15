@@ -1,27 +1,61 @@
-## NunoDuarte homepage
-personal website which includes
-- deadlines for desired top conferences/journals/workshops
-- CV
-- GitHub account 
-- YouTube account (research demos and presentations)
-- Relevant Publications and Projects
+# NunoDuarte Homepage
 
-## How to update deadlines
-- add conference deadline info to statis/data/conferences.json
-- previous conference info is in static/data/past_conferences.txt
+A personal academic website featuring conference deadlines, CV, publications, and research demos.
 
+## Features
 
-## Steps to load webpage locally 
-ideal for testing new template updates or add content
-1. ```sudo gem install bundler``` or ```sudo gem install bundler -v 2.4.2``` (if newer version is not working)
-2. create Gemfile
-3. write to Gemfile:
-```vim
+- **Conference Deadlines** - Track submission deadlines for top-tier conferences, journals, and workshops
+- **GitHub Integration** - Direct link to code repositories and projects
+- **YouTube Channel** - Research demonstrations and presentations
+- **Publications & Projects** - Curated list of relevant academic work
+
+## Updating Conference Deadlines
+
+1. Add new conference information to `static/data/conferences.json`
+2. Archive past conferences in `static/data/past_conferences.txt`
+
+## Local Development
+
+To test template updates or add content locally:
+
+### Prerequisites
+
+Install Bundler:
+```bash
+sudo gem install bundler
+```
+
+Or specify version 2.4.2 if needed:
+```bash
+sudo gem install bundler -v 2.4.2
+```
+
+### Setup
+
+1. Create a `Gemfile` in the project root
+
+2. Add the following content to `Gemfile`:
+```ruby
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.0"
-gem "webrick", "~> 1.7" # Required for Jekyll on Ruby 3.x
-
+gem "webrick", "~> 1.7"  # Required for Jekyll on Ruby 3.x
 ```
-4. ```bundle exec jekyll serve```
-5. open ```http://127.0.0.1:4000/```
+
+3. Install dependencies:
+```bash
+bundle install
+```
+
+4. Start the local server:
+```bash
+bundle exec jekyll serve
+```
+
+5. View the site at: http://127.0.0.1:4000/
+
+## Technologies
+
+- Jekyll 4.3.0
+- Ruby 3.x
+- Webrick 1.7
