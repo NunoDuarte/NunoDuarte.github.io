@@ -22,7 +22,12 @@ A personal academic website featuring conference deadlines, CV, publications, an
 ## :house: Local Development
 
 To test template updates or add content locally:
+### Dependencies
 
+- Jekyll 4.3.0
+- Ruby 3.x
+- Webrick 1.7
+  
 ### Prerequisites
 
 Install Bundler:
@@ -36,7 +41,7 @@ sudo gem install bundler -v 2.4.2
 ```
 
 ### Setup
-
+  
 1. Create a `Gemfile` in the project root
 
 2. Add the following content to `Gemfile`:
@@ -59,8 +64,3 @@ bundle exec jekyll serve
 
 5. View the site at: http://127.0.0.1:4000/
 
-## Technologies
-
-- Jekyll 4.3.0
-- Ruby 3.x
-- Webrick 1.7
