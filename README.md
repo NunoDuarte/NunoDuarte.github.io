@@ -2,6 +2,9 @@
 
 A personal academic website featuring conference deadlines, CV, publications, and research demos.
 
+## TODO 
+- change CV link to short bio link
+- 
 ## Features
 - **Personal Bio** - Short bio of my personal career
 - **Conference Deadlines** - Track submission deadlines for top-tier conferences, journals, and workshops
