@@ -14,7 +14,7 @@ A personal academic website featuring conference deadlines, CV, publications, an
 1. Add new conference information to `static/data/conferences.json`
 2. Archive past conferences in `static/data/past_conferences.txt`
 
-## TODO list 
+## :hourglass_flowing_sand: TODO list 
 - [ ] change CV link to short bio link
 - [ ] update bio to include robotic grasping and object reconstruction using vision
 - [ ] add EN and PT short bio
