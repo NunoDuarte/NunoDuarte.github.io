@@ -4,7 +4,7 @@ A personal academic website featuring conference deadlines, CV, publications, an
 
 ## TODO 
 - [ ] change CV link to short bio link
-- [ ] update bio to include grasping and object detection, reconstruction
+- [ ] update bio to include robotic grasping and object reconstruction using vision
 - [ ] add EN and PT short bio
   
 ## Features
