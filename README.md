@@ -3,8 +3,10 @@
 A personal academic website featuring conference deadlines, CV, publications, and research demos.
 
 ## TODO 
-- change CV link to short bio link
-- 
+- [ ] change CV link to short bio link
+- [ ] update bio to include grasping and object detection, reconstruction
+- [ ] add EN and PT short bio
+  
 ## Features
 - **Personal Bio** - Short bio of my personal career
 - **Conference Deadlines** - Track submission deadlines for top-tier conferences, journals, and workshops
