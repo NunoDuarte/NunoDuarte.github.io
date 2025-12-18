@@ -16,6 +16,7 @@ A personal academic website featuring conference deadlines, CV, publications, an
 
 ## :hourglass_flowing_sand: TODO list 
 - [ ] change CV link to short bio link
+- [ ] update photo - more professional
 - [ ] update bio to include robotic grasping and object reconstruction using vision
 - [ ] add EN and PT short bio
 
