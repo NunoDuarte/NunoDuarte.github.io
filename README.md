@@ -3,7 +3,7 @@
 A personal academic website featuring conference deadlines, CV, publications, and research demos.
   
 ## :star2: Features
-- **Personal Bio** - Short bio of my personal career
+- **Personal Bio** - Short bio of my personal career (useful to include in talks)
 - **Conference Deadlines** - Track submission deadlines for top-tier conferences, journals, and workshops
 - **GitHub Integration** - Direct link to code repositories and projects
 - **YouTube Channel** - Research demonstrations and presentations
