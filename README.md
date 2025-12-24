@@ -1,6 +1,6 @@
 # NunoDuarte Homepage
 
-A personal academic website featuring conference deadlines, CV, publications, and research demos.
+A personal academic website 
   
 ## :star2: Features
 - **Personal Bio** - Short bio of my personal career (useful to include in talks)
