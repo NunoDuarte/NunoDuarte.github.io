@@ -24,7 +24,7 @@ A personal academic website
 
 ## :house: Local Development
 
-To test template updates or add content locally:
+To test template updates or add content locally
 ### Dependencies
 
 - Jekyll 4.3.0
