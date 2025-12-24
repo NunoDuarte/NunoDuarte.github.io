@@ -15,7 +15,7 @@ A personal academic website featuring conference deadlines, CV, publications, an
 2. Archive past conferences in `static/data/past_conferences.txt`
 
 ## :hourglass_flowing_sand: TODO list 
-- [x] update bio to include robotic grasping and object reconstruction using vision
+- [ ] update bio to include robotic grasping and object reconstruction using vision
 - [ ] change CV link to point to cv
 - [x] add short bio link
 - [ ] update photo - more professional
