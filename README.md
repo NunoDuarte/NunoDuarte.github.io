@@ -16,7 +16,6 @@ A personal academic website
 2. Archive past conferences in `static/data/past_conferences.txt`
 
 ## :hourglass_flowing_sand: TODO list 
-- [x] change CV link to point to cv
 - [ ] update photo - more professional
 
 ## :house: Local Development
