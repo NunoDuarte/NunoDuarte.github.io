@@ -3,8 +3,8 @@
 A personal academic website 
   
 ## :star2: Features
+- **Curriculum Vitae** - PDF of CV
 - **Personal Bio** - Short bio of my personal career (useful to include in talks)
-- **CV** - PDF of CV
 - **Conference Deadlines** - Track submission deadlines for top-tier conferences, journals, and workshops
 - **GitHub Integration** - Direct link to code repositories and projects
 - **YouTube Channel** - Research demonstrations and presentations
