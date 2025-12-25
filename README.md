@@ -17,10 +17,10 @@ A personal academic website
 
 ## :hourglass_flowing_sand: TODO list 
 - [x] add short bio link
-- [ ] update bio to include robotic grasping and object reconstruction using vision
+- [x] update bio to include robotic grasping and object reconstruction using vision
 - [ ] change CV link to point to cv
 - [ ] update photo - more professional
-- [ ] add EN and PT short bio
+- [x] add EN and PT short bio
 
 ## :house: Local Development
 
