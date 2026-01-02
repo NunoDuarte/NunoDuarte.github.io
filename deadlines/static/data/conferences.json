@@ -20,7 +20,7 @@
     "date_start": "2026-08-01",
     "date_end": "2026-08-04",
     "deadline": "2026-01-10 23:59:59",
-    "timezone": "CET",
+    "timezone": "Etc/GMT-8",
     "type": "RO"
   },
   {
