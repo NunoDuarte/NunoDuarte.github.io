@@ -1,17 +1,5 @@
 [
   {
-    "id": "biorob",
-    "name": "BioRob 2026",
-    "link": "https://2026.ieeebiorob.org",
-    "location": "Edmonton, Alberta, Canada",
-    "location_link": "http://maps.google.com/?q=Edmonton, Alberta, Canada",
-    "date_start": "2026-08-01",
-    "date_end": "2026-08-04",
-    "deadline": "2026-01-10 23:59:59",
-    "timezone": "Etc/GMT-8",
-    "type": "RO"
-  },
-  {
     "id": "icpr",
     "name": "ICPR 2026",
     "link": "https://icpr2026orgteam.github.io/ICPR2026website/index.html",
@@ -19,9 +7,21 @@
     "location_link": "http://maps.google.com/?q=Lyon, France",
     "date_start": "2026-08-17",
     "date_end": "2026-08-21",
-    "deadline": "2026-01-10 23:59:59",
-    "timezone": "Etc/GMT+12",
+    "deadline": "2026-01-13 23:59:59",
+    "timezone": "Etc/GMT-8",
     "type": "ML"
+  },
+  {
+    "id": "biorob",
+    "name": "BioRob 2026",
+    "link": "https://2026.ieeebiorob.org",
+    "location": "Edmonton, Alberta, Canada",
+    "location_link": "http://maps.google.com/?q=Edmonton, Alberta, Canada",
+    "date_start": "2026-08-01",
+    "date_end": "2026-08-04",
+    "deadline": "2026-01-17 23:59:59",
+    "timezone": "Etc/GMT-8",
+    "type": "RO"
   },
   {
     "id": "rss",
