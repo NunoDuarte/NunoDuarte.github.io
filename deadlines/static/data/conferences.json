@@ -1,17 +1,5 @@
 [
   {
-    "id": "rss",
-    "name": "RSS 2026",
-    "link": "https://roboticsconference.org/",
-    "location": "Sydney, Australia",
-    "location_link": "http://maps.google.com/?q=Sydney, Australia",
-    "date_start": "2026-07-21",
-    "date_end": "2026-07-25",
-    "deadline": "2026-01-30 23:59:59",
-    "timezone": "UTC-12",
-    "type": "RO"
-  },
-  {
     "id": "iros",
     "name": "iROS 2026",
     "link": "https://2026.ieee-iros.org",
