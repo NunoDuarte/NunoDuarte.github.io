@@ -19,8 +19,8 @@
     "location_link": "http://maps.google.com/?q=Malmo, Sweden",
     "date_start": "2026-09-29",
     "date_end": "2026-10-04",
-    "deadline": "2026-03-06 23:59:59",
-    "timezone": "America/Los_Angeles",
+    "deadline": "2026-03-05 23:00:00",
+    "timezone": "Europe/Berlin",
     "type": "CV"
   },
   {
