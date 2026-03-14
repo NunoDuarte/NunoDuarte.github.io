@@ -82,6 +82,18 @@
     "deadline": "2026-07-18 23:59:59",
     "timezone": "America/Los_Angeles",
     "type": "CV"
-  }
+  },
+  {
+    "id": "humanoids",
+    "name": "Humanoids 2026",
+    "link": "https://2026.ieee-humanoids.org/",
+    "location": "Santa Clara, California",
+    "location_link": "http://maps.google.com/?q=Santa Clara, California",
+    "date_start": "2026-12-06",
+    "date_end": "2026-12-09",
+    "deadline": "2026-07-31 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "RO"
+  },
  
 ]
