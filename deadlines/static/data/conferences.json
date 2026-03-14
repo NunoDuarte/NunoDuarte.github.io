@@ -1,29 +1,5 @@
 [
   {
-    "id": "iros",
-    "name": "iROS 2026",
-    "link": "https://2026.ieee-iros.org",
-    "location": "Pittsburgh, USA",
-    "location_link": "http://maps.google.com/?q=Pittsburgh, USA",
-    "date_start": "2026-10-19",
-    "date_end": "2026-10-25",
-    "deadline": "2026-03-02 23:59:59",
-    "timezone": "America/Los_Angeles",
-    "type": "RO"
-  },
-  {
-    "id": "eccv",
-    "name": "ECCV 2026",
-    "link": "https://eccv2024.ecva.net/",
-    "location": "Malmo, Sweden",
-    "location_link": "http://maps.google.com/?q=Malmo, Sweden",
-    "date_start": "2026-09-29",
-    "date_end": "2026-10-04",
-    "deadline": "2026-03-05 23:00:00",
-    "timezone": "Europe/Berlin",
-    "type": "CV"
-  },
-  {
     "id": "icdl",
     "name": "ICDL 2026",
     "link": "https://attend.ieee.org/icdl-2026/",
