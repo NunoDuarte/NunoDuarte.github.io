@@ -24,6 +24,18 @@
     "type": "RO"
   },
   {
+    "id": "cvpr_ws",
+    "name": "Egocentric Vision (EgoVis) Workshop 2026",
+    "link": "https://egovis.github.io/cvpr26/#program",
+    "location": "Denver, USA",
+    "location_link": "http://maps.google.com/?q=Denver, USA",
+    "date_start": "2026-06-03",
+    "date_end": "2026-06-04",
+    "deadline": "2024-04-27 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "ML"
+  },
+  {
     "id": "nips",
     "name": "NIPS 2026",
     "link": "https://nips.cc/Conferences/2026",
