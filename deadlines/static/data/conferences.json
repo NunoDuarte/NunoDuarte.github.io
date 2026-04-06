@@ -82,5 +82,17 @@
     "deadline": "2026-07-31 23:59:59",
     "timezone": "America/Los_Angeles",
     "type": "RO"
+  },
+  {
+    "id": "icra",
+    "name": "ICRA 2027",
+    "link": "https://2027.ieee-icra.org/",
+    "location": "Seoul, South Korea",
+    "location_link": "http://maps.google.com/?q=Seoul, South Korea",
+    "date_start": "2027-05-24",
+    "date_end": "2027-05-28",
+    "deadline": "2025-09-15 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "RO"
   }
 ]
