@@ -1,28 +1,4 @@
 [
-    {
-    "id": "roman",
-    "name": "Ro-Man 2026",
-    "link": "https://www.brain.kyutech.ac.jp/~s-yasukawa/ro-man2026/",
-    "location": "Fukuoka, Japan",
-    "location_link": "http://maps.google.com/?q=Fukuoka, Japan",
-    "date_start": "2026-08-24",
-    "date_end": "2026-08-28",
-    "deadline": "2026-03-29 23:59:59",
-    "timezone": "America/Los_Angeles",
-    "type": "RO"
-  },
-  {
-    "id": "icdl",
-    "name": "ICDL 2026",
-    "link": "https://attend.ieee.org/icdl-2026/",
-    "location": "Kyoto, Japan",
-    "location_link": "http://maps.google.com/?q=Kyoto, Japan",
-    "date_start": "2026-09-15",
-    "date_end": "2026-09-18",
-    "deadline": "2026-04-03 23:59:59",
-    "timezone": "America/Los_Angeles",
-    "type": "RO"
-  },
   {
     "id": "cvpr_ws",
     "name": "Egocentric Vision (EgoVis) Workshop 2026",
