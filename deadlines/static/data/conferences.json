@@ -70,5 +70,17 @@
     "deadline": "2026-09-15 23:59:59",
     "timezone": "America/Los_Angeles",
     "type": "RO"
-  }
+  },
+  {
+    "id": "cvpr",
+    "name": "CVPR 2027",
+    "link": "https://cvpr.thecvf.com/",
+    "location": "Denver, USA",
+    "location_link": "http://maps.google.com/?q=Seattle, USA",
+    "date_start": "2027-06-19",
+    "date_end": "2027-06-26",
+    "deadline": "2026-11-13 23:59:59",
+    "timezone": "Etc/GMT+12",
+    "type": "CV"
+  },
 ]
