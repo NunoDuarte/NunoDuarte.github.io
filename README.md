@@ -17,6 +17,7 @@ A personal academic website
 
 ## :hourglass_flowing_sand: TODO list 
 - [ ] update photo - more professional
+- [ ] change paper url domain to ai-packbot domain
 
 ## :house: Local Development
 
