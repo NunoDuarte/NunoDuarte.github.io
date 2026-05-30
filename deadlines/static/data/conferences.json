@@ -1,17 +1,5 @@
 [
   {
-    "id": "corl",
-    "name": "CoRL 2026",
-    "link": "http://www.corl.org/",
-    "location": "Austin, Texas",
-    "location_link": "http://maps.google.com/?q=Austin, Texas",
-    "date_start": "2026-11-09",
-    "date_end": "2026-11-12",
-    "deadline": "2026-05-25 23:59:59",
-    "timezone": "America/Los_Angeles",
-    "type": "RO"
-  },
-  {
     "id": "accv",
     "name": "ACCV 2026",
     "link": "https://accv2026.org",
