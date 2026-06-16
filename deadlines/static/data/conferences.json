@@ -70,5 +70,17 @@
     "deadline": "2026-11-13 23:59:59",
     "timezone": "Etc/GMT+12",
     "type": "CV"
+  },
+  {
+    "id": "icpr",
+    "name": "ICPR 2027",
+    "link": "https://icpr2026orgteam.github.io/ICPR2026website/index.html",
+    "location": "Lyon, France",
+    "location_link": "http://maps.google.com/?q=Lyon, France",
+    "date_start": "2027-08-17",
+    "date_end": "2027-08-21",
+    "deadline": "2027-01-13 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "ML"
   }
 ]
