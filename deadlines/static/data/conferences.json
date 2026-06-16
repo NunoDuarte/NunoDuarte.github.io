@@ -1,16 +1,4 @@
 [
-    {
-    "id": "icarcv",
-    "name": "ICARCV 2026",
-    "link": "https://www.carvs-icarcv.org/",
-    "location": "Halong Bay, Vietname",
-    "location_link": "http://maps.google.com/?q=Halong Bay, Vietnam",
-    "date_start": "2026-11-14",
-    "date_end": "2026-11-17",
-    "deadline": "2026-06-15 23:59:59",
-    "timezone": "America/Los_Angeles",
-    "type": "RO"
-  },
   {
     "id": "accv",
     "name": "ACCV 2026",
