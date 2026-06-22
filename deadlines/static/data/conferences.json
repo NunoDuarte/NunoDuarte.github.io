@@ -12,18 +12,6 @@
     "type": "CV"
   },
   {
-    "id": "wacv",
-    "name": "WACV 2027",
-    "link": "https://wacv.thecvf.com/Conferences/2027",
-    "location": "Orlando, Florida",
-    "location_link": "http://maps.google.com/?q=Orlando, Florida",
-    "date_start": "2027-03-05",
-    "date_end": "2027-03-10",
-    "deadline": "2026-07-18 23:59:59",
-    "timezone": "America/Los_Angeles",
-    "type": "CV"
-  },
-  {
     "id": "humanoids",
     "name": "Humanoids 2026",
     "link": "https://2026.ieee-humanoids.org/",
