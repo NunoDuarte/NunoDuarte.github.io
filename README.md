@@ -19,7 +19,7 @@ A personal academic website
 - [ ] update photo - more professional
 - [ ] change paper url domain to ai-packbot domain
 - [ ] add herb project page
-- [ ] add placeholder for future ai-packbot publcation
+- [ ] add placeholder for future ai-packbot publications
 
 ## :house: Local Development
 
