@@ -17,7 +17,7 @@ A personal academic website
 
 ## :hourglass_flowing_sand: TODO list 
 - [ ] update photo - more professional
-- [ ] change paper url domain to ai-packbot domain
+- [ ] create a Github organization for ai-packbot project
 - [ ] add herb project page
 - [ ] add placeholder for future ai-packbot publications
 
