@@ -1,4 +1,16 @@
 {
+  {
+    "id": "accv",
+    "name": "ACCV 2026",
+    "link": "https://accv2026.org",
+    "location": "Osaka, Japan",
+    "location_link": "http://maps.google.com/?q=Osaka, Japan",
+    "date_start": "2026-12-08",
+    "date_end": "2026-12-12",
+    "deadline": "2026-07-05 23:59:59",
+    "timezone": "UTC-12",
+    "type": "CV"
+  },
     "id": "wacv",
     "name": "WACV 2027",
     "link": "https://wacv.thecvf.com/Conferences/2027",
