@@ -70,5 +70,17 @@
     "deadline": "2027-01-31 23:59:59",
     "timezone": "CET",
     "type": "RO"
-  }
+  },
+  {
+    "id": "iros",
+    "name": "iROS 2027",
+    "link": "https://www.ieee-ras.org/event/2027-ieee-rsj-international-conference-on-intelligent-robots-and-systems-iros-70525/",
+    "location": "Florence, Italy",
+    "location_link": "http://maps.google.com/?q=Florence, Italy",
+    "date_start": "2027-10-19",
+    "date_end": "2027-10-25",
+    "deadline": "2027-03-01 23:59:59",
+    "timezone": "America/Los_Angeles",
+    "type": "RO"
+  },
 ]
